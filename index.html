@@ -4,632 +4,631 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Pestokil Pest Control Kenya | Fumigation & Pest Removal Nairobi</title>
-<meta name="description" content="Professional pest control & fumigation services in Nairobi. Bed bugs, cockroaches, termites, rodents & more. Serving homes & businesses. Call 0720 961 362."/>
+<meta name="description" content="Professional pest control & fumigation in Nairobi. Bedbugs, cockroaches, termites, rodents & more. Call 0720 961 362."/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&family=Barlow+Condensed:wght@500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700;800;900&display=swap" rel="stylesheet">
 <style>
-/* ============================================
-   PESTOKIL PEST CONTROL — index.html
-   Style: Bold red/black professional pest control
-   ============================================ */
 :root{
   --red:#C0120E;
   --red-dark:#8B0B09;
   --red-light:#E8231F;
-  --black:#111111;
+  --black:#0f0f0f;
   --dark:#1A1A1A;
-  --grey:#2C2C2C;
   --light:#F5F5F5;
   --white:#FFFFFF;
-  --text:#333333;
-  --text-soft:#666666;
+  --text:#333;
+  --soft:#666;
   --border:#E0E0E0;
-  --font-head:'Barlow Condensed',sans-serif;
-  --font-body:'Barlow',sans-serif;
-  --transition:0.28s cubic-bezier(.4,0,.2,1);
-  --shadow:0 4px 24px rgba(0,0,0,0.12);
-  --shadow-red:0 6px 30px rgba(192,18,14,0.35);
+  --fh:'Barlow Condensed',sans-serif;
+  --fb:'Barlow',sans-serif;
+  --tr:0.28s cubic-bezier(.4,0,.2,1);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
-body{font-family:var(--font-body);background:var(--white);color:var(--text);overflow-x:hidden;}
-img{max-width:100%;display:block;}
+body{font-family:var(--fb);color:var(--text);overflow-x:hidden;background:#fff;}
+img{max-width:100%;display:block;object-fit:cover;}
 a{text-decoration:none;color:inherit;}
 ul{list-style:none;}
 .container{max-width:1200px;margin:0 auto;padding:0 1.5rem;}
 
-/* ══ TOP BAR ══ */
-.topbar{background:var(--black);padding:0.55rem 0;}
-.topbar__inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;}
-.topbar__contact{display:flex;gap:1.8rem;flex-wrap:wrap;}
-.topbar__contact a{color:rgba(255,255,255,0.75);font-size:0.8rem;display:flex;align-items:center;gap:0.4rem;transition:color var(--transition);}
-.topbar__contact a:hover{color:var(--red-light);}
-.topbar__contact .icon{font-size:0.85rem;}
-.topbar__social{display:flex;gap:0.6rem;}
-.topbar__social a{width:28px;height:28px;border-radius:4px;background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.7);display:flex;align-items:center;justify-content:center;font-size:0.75rem;transition:background var(--transition),color var(--transition);}
-.topbar__social a:hover{background:var(--red);color:var(--white);}
+/* ── TOPBAR ── */
+.topbar{background:#000;padding:.5rem 0;}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;}
+.topbar__left{display:flex;gap:1.5rem;flex-wrap:wrap;}
+.topbar__left a{color:rgba(255,255,255,.7);font-size:.78rem;display:flex;align-items:center;gap:.4rem;transition:color var(--tr);}
+.topbar__left a:hover{color:var(--red-light);}
+.topbar__right{display:flex;gap:.5rem;}
+.topbar__right a{width:26px;height:26px;border-radius:4px;background:rgba(255,255,255,.08);color:rgba(255,255,255,.7);display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;transition:background var(--tr);}
+.topbar__right a:hover{background:var(--red);}
 
-/* ══ NAV ══ */
-.nav{background:var(--white);box-shadow:0 2px 16px rgba(0,0,0,0.08);position:sticky;top:0;z-index:1000;}
-.nav__inner{display:flex;align-items:center;justify-content:space-between;padding:0.9rem 0;}
-.nav__logo{display:flex;align-items:center;gap:0.7rem;}
-.nav__logo-icon{width:46px;height:46px;background:var(--red);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:900;color:white;font-family:var(--font-head);position:relative;}
-.nav__logo-icon::after{content:'';position:absolute;inset:3px;border:1.5px solid rgba(255,255,255,0.3);border-radius:5px;}
-.nav__logo-text{line-height:1;}
-.nav__logo-text .brand{font-family:var(--font-head);font-size:1.5rem;font-weight:800;letter-spacing:0.01em;color:var(--dark);}
-.nav__logo-text .brand span{color:var(--red);}
-.nav__logo-text .sub{font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-soft);}
-.nav__links{display:flex;align-items:center;gap:0.2rem;}
-.nav__links a{font-size:0.88rem;font-weight:600;padding:0.5rem 0.9rem;border-radius:4px;color:var(--dark);transition:color var(--transition);position:relative;}
-.nav__links a.active,
-.nav__links a:hover{color:var(--red);}
-.nav__links a.active::after{content:'';position:absolute;bottom:0;left:0.9rem;right:0.9rem;height:2px;background:var(--red);border-radius:2px;}
-.nav__cta{background:var(--red)!important;color:var(--white)!important;padding:0.6rem 1.4rem!important;border-radius:6px;font-weight:700!important;transition:background var(--transition),transform var(--transition),box-shadow var(--transition);}
-.nav__cta:hover{background:var(--red-dark)!important;transform:translateY(-1px);box-shadow:var(--shadow-red);}
-.nav__burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;}
-.nav__burger span{display:block;width:24px;height:2px;background:var(--dark);border-radius:2px;transition:var(--transition);}
+/* ── NAV ── */
+.nav{background:#fff;box-shadow:0 2px 16px rgba(0,0,0,.08);position:sticky;top:0;z-index:1000;}
+.nav .container{display:flex;align-items:center;justify-content:space-between;padding-top:.9rem;padding-bottom:.9rem;}
+.logo{display:flex;align-items:center;gap:.7rem;}
+.logo__icon{width:44px;height:44px;background:var(--red);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:1.1rem;font-weight:900;color:#fff;border:2px solid rgba(255,255,255,.2);}
+.logo__text .brand{font-family:var(--fh);font-size:1.45rem;font-weight:800;color:#111;line-height:1;}
+.logo__text .brand span{color:var(--red);}
+.logo__text .sub{font-size:.6rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);}
+.nav__links{display:flex;align-items:center;gap:.1rem;}
+.nav__links a{font-size:.86rem;font-weight:600;padding:.5rem .85rem;border-radius:4px;color:#222;transition:color var(--tr);}
+.nav__links a:hover,.nav__links a.act{color:var(--red);}
+.nav__cta{background:var(--red)!important;color:#fff!important;padding:.6rem 1.3rem!important;border-radius:6px!important;}
+.nav__cta:hover{background:var(--red-dark)!important;}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px;}
+.burger span{display:block;width:22px;height:2px;background:#111;border-radius:2px;}
 
 /* MOBILE MENU */
-.mobile-menu{display:none;position:fixed;inset:0;background:var(--dark);z-index:999;flex-direction:column;justify-content:center;align-items:center;}
-.mobile-menu.open{display:flex;}
-.mobile-menu ul{text-align:center;}
-.mobile-menu li{margin:1rem 0;}
-.mobile-menu a{font-family:var(--font-head);font-size:2rem;font-weight:700;color:var(--white);letter-spacing:0.05em;transition:color var(--transition);}
-.mobile-menu a:hover{color:var(--red-light);}
-.mobile-menu__close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:var(--white);font-size:1.8rem;cursor:pointer;}
+.mmenu{display:none;position:fixed;inset:0;background:var(--dark);z-index:999;flex-direction:column;justify-content:center;align-items:center;}
+.mmenu.open{display:flex;}
+.mmenu ul{text-align:center;}
+.mmenu li{margin:1.2rem 0;}
+.mmenu a{font-family:var(--fh);font-size:2.2rem;font-weight:800;color:#fff;}
+.mmenu a:hover{color:var(--red-light);}
+.mmenu__x{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:#fff;font-size:2rem;cursor:pointer;}
 
-/* ══ HERO ══ */
-.hero{position:relative;min-height:88vh;display:flex;align-items:center;background:var(--black);overflow:hidden;}
-.hero__bg{position:absolute;inset:0;background:linear-gradient(105deg,rgba(17,17,17,0.97) 0%,rgba(17,17,17,0.75) 45%,rgba(17,17,17,0.1) 100%);}
-.hero__img{position:absolute;inset:0;background:url('images/hero.jpg') center/cover no-repeat;opacity:0.55;}
-.hero__img-fallback{position:absolute;inset:0;background:radial-gradient(ellipse at 75% 50%,#3a0a09 0%,#1a0404 40%,#0d0d0d 100%);}
+/* ── HERO ── */
+.hero{
+  position:relative;
+  min-height:90vh;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+}
+/* Real fumigation background via pseudo-element so it always loads */
+.hero::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=85&auto=format&fit=crop');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  /* fallback colour shown before image loads */
+  background-color:#1a0808;
+  z-index:0;
+}
+/* Dark gradient overlay so text is readable */
+.hero::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:linear-gradient(100deg,rgba(8,4,4,.93) 0%,rgba(8,4,4,.70) 50%,rgba(8,4,4,.25) 100%);
+  z-index:1;
+}
 .hero__content{position:relative;z-index:2;max-width:620px;padding:0 1.5rem;}
-.hero__tag{display:inline-block;background:var(--red);color:var(--white);font-size:0.72rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;padding:0.3rem 0.8rem;border-radius:3px;margin-bottom:1.3rem;}
-.hero__title{font-family:var(--font-head);font-size:clamp(3rem,7vw,5.5rem);font-weight:900;line-height:1.0;color:var(--white);margin-bottom:0.3rem;text-transform:uppercase;}
-.hero__title-red{font-family:var(--font-head);font-size:clamp(3rem,7vw,5.5rem);font-weight:900;line-height:1.05;color:var(--red-light);text-transform:uppercase;display:block;margin-bottom:1.2rem;}
-.hero__sub{font-size:1rem;line-height:1.7;color:rgba(255,255,255,0.65);margin-bottom:2.2rem;max-width:480px;}
+.hero__tag{display:inline-block;background:var(--red);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:.28rem .75rem;border-radius:3px;margin-bottom:1.2rem;}
+.hero__h1{font-family:var(--fh);font-size:clamp(2.8rem,7vw,5.5rem);font-weight:900;line-height:1;color:#fff;text-transform:uppercase;}
+.hero__red{font-family:var(--fh);font-size:clamp(2.8rem,7vw,5.5rem);font-weight:900;color:var(--red-light);text-transform:uppercase;display:block;line-height:1.05;margin-bottom:1.2rem;}
+.hero__sub{font-size:1rem;line-height:1.75;color:rgba(255,255,255,.6);margin-bottom:2.2rem;max-width:480px;}
 .hero__btns{display:flex;gap:1rem;flex-wrap:wrap;}
 
-/* ══ BUTTONS ══ */
-.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.8rem 1.8rem;font-family:var(--font-body);font-size:0.88rem;font-weight:700;border-radius:6px;cursor:pointer;transition:var(--transition);border:none;letter-spacing:0.03em;}
-.btn--red{background:var(--red);color:var(--white);}
-.btn--red:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:var(--shadow-red);}
-.btn--outline-white{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,0.5);}
-.btn--outline-white:hover{border-color:var(--white);background:rgba(255,255,255,0.08);}
-.btn--outline-red{background:transparent;color:var(--red);border:2px solid var(--red);}
-.btn--outline-red:hover{background:var(--red);color:var(--white);}
-.btn--white{background:var(--white);color:var(--red);}
-.btn--white:hover{background:var(--light);transform:translateY(-2px);}
-.btn svg,.btn .arrow{font-size:1rem;}
+/* ── BUTTONS ── */
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.8rem;font-family:var(--fb);font-size:.86rem;font-weight:700;border-radius:6px;cursor:pointer;transition:all var(--tr);border:2px solid transparent;letter-spacing:.02em;}
+.btn-red{background:var(--red);color:#fff;border-color:var(--red);}
+.btn-red:hover{background:var(--red-dark);border-color:var(--red-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(192,18,14,.4);}
+.btn-wt{background:transparent;color:#fff;border-color:rgba(255,255,255,.5);}
+.btn-wt:hover{border-color:#fff;}
+.btn-or{background:transparent;color:var(--red);border-color:var(--red);}
+.btn-or:hover{background:var(--red);color:#fff;}
+.btn-white{background:#fff;color:var(--red);border-color:#fff;}
+.btn-white:hover{background:var(--light);}
+.btn-full{width:100%;justify-content:center;}
 
-/* ══ FEATURES STRIP ══ */
-.features{background:var(--dark);padding:1.4rem 0;}
-.features__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;}
-.feature{display:flex;align-items:center;gap:1rem;padding:0.5rem 1rem;}
-.feature__icon{width:44px;height:44px;border-radius:50%;border:2px solid var(--red);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;color:var(--red);}
-.feature__title{font-size:0.88rem;font-weight:700;color:var(--white);margin-bottom:0.1rem;}
-.feature__sub{font-size:0.75rem;color:rgba(255,255,255,0.45);}
-.feature+.feature{border-left:1px solid rgba(255,255,255,0.08);}
+/* ── FEATURES STRIP ── */
+.strip{background:#1a1a1a;padding:1.2rem 0;}
+.strip .container{display:grid;grid-template-columns:repeat(4,1fr);}
+.feat{display:flex;align-items:center;gap:.9rem;padding:.5rem 1.2rem;border-right:1px solid rgba(255,255,255,.07);}
+.feat:last-child{border-right:none;}
+.feat__ico{width:42px;height:42px;border-radius:50%;border:2px solid var(--red);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
+.feat__t{font-size:.86rem;font-weight:700;color:#fff;}
+.feat__s{font-size:.73rem;color:rgba(255,255,255,.4);}
 
-/* ══ SECTION SHARED ══ */
-.section{padding:5rem 0;}
-.section-tag{display:block;font-size:0.75rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--red);margin-bottom:0.6rem;}
-.section-title{font-family:var(--font-head);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;color:var(--dark);line-height:1.1;text-transform:uppercase;}
-.section-title--white{color:var(--white);}
+/* ── SECTIONS ── */
+.sec{padding:5rem 0;}
+.stag{font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:.5rem;}
+.sh2{font-family:var(--fh);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:900;color:#111;text-transform:uppercase;line-height:1.1;}
+.sh2-w{color:#fff;}
 
-/* ══ SERVICES ══ */
+/* ── SERVICES ── */
 .services{background:var(--light);}
-.services__header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:2.5rem;flex-wrap:wrap;gap:1rem;}
-.services__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
-.scard{background:var(--white);border-radius:10px;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,0.06);transition:transform var(--transition),box-shadow var(--transition);}
-.scard:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(0,0,0,0.12);}
-.scard__img{height:200px;background:var(--grey);position:relative;overflow:hidden;}
-.scard__img img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease;}
-.scard:hover .scard__img img{transform:scale(1.06);}
-.scard__img-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3rem;background:linear-gradient(135deg,#1a0a09,#2d1210);}
-.scard__badge{position:absolute;bottom:1rem;left:1rem;width:42px;height:42px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;}
+.svc-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:2.5rem;flex-wrap:wrap;gap:1rem;}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.scard{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,.07);transition:transform var(--tr),box-shadow var(--tr);}
+.scard:hover{transform:translateY(-6px);box-shadow:0 16px 40px rgba(0,0,0,.13);}
+.scard__img{height:210px;position:relative;overflow:hidden;background:#1a0808;}
+.scard__img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;display:block;}
+.scard:hover .scard__img img{transform:scale(1.07);}
+.scard__dot{position:absolute;bottom:1rem;left:1rem;width:40px;height:40px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;}
 .scard__body{padding:1.4rem;}
-.scard__title{font-family:var(--font-head);font-size:1.3rem;font-weight:800;color:var(--dark);margin-bottom:0.6rem;text-transform:uppercase;}
-.scard__desc{font-size:0.88rem;line-height:1.65;color:var(--text-soft);margin-bottom:1rem;}
-.scard__link{font-size:0.82rem;font-weight:700;color:var(--red);display:inline-flex;align-items:center;gap:0.3rem;transition:gap var(--transition);}
-.scard__link:hover{gap:0.6rem;}
+.scard__title{font-family:var(--fh);font-size:1.3rem;font-weight:800;text-transform:uppercase;color:#111;margin-bottom:.5rem;}
+.scard__desc{font-size:.88rem;line-height:1.65;color:var(--soft);margin-bottom:1rem;}
+.scard__link{font-size:.82rem;font-weight:700;color:var(--red);display:inline-flex;align-items:center;gap:.3rem;transition:gap var(--tr);}
+.scard__link:hover{gap:.6rem;}
 
-/* ══ ALL SERVICES LIST ══ */
-.all-services{background:var(--white);padding:5rem 0;}
-.all-services__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0.6rem;margin-top:2.5rem;}
-.service-pill{display:flex;align-items:center;gap:0.5rem;padding:0.65rem 1rem;border:1px solid var(--border);border-radius:6px;font-size:0.82rem;font-weight:500;color:var(--text);transition:all var(--transition);cursor:default;}
-.service-pill:hover{border-color:var(--red);color:var(--red);background:rgba(192,18,14,0.04);transform:translateX(3px);}
-.service-pill::before{content:'✓';color:var(--red);font-weight:700;font-size:0.75rem;flex-shrink:0;}
+/* ── ALL SERVICES LIST ── */
+.allsvc{background:#fff;}
+.pill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.55rem;margin-top:2.2rem;}
+.pill{display:flex;align-items:center;gap:.5rem;padding:.6rem .9rem;border:1px solid var(--border);border-radius:6px;font-size:.8rem;font-weight:500;color:var(--text);transition:all var(--tr);}
+.pill:hover{border-color:var(--red);color:var(--red);background:rgba(192,18,14,.04);transform:translateX(3px);}
+.pill::before{content:'✓';color:var(--red);font-weight:700;font-size:.72rem;flex-shrink:0;}
 
-/* ══ PRICING ══ */
-.pricing{background:var(--dark);padding:5rem 0;}
-.pricing__inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
-.pricing__text .section-tag{color:var(--red-light);}
-.pricing__text p{font-size:0.97rem;line-height:1.7;color:rgba(255,255,255,0.6);margin:1rem 0 2rem;}
-.pricing__card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:2.5rem;position:relative;overflow:hidden;}
-.pricing__card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--red),var(--red-light));}
-.pricing__range{font-family:var(--font-head);font-size:3.5rem;font-weight:900;color:var(--white);line-height:1;}
-.pricing__range span{font-size:1.5rem;color:var(--red-light);}
-.pricing__label{font-size:0.8rem;color:rgba(255,255,255,0.4);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.5rem;margin-top:0.3rem;}
-.pricing__includes{display:flex;flex-direction:column;gap:0.7rem;}
-.pricing__item{display:flex;align-items:center;gap:0.7rem;font-size:0.88rem;color:rgba(255,255,255,0.7);}
-.pricing__item .tick{width:20px;height:20px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.65rem;color:white;flex-shrink:0;}
+/* ── PRICING ── */
+.pricing{background:#111;}
+.pricing-header{text-align:center;margin-bottom:2.8rem;}
+.pricing-header p{font-size:.93rem;line-height:1.7;color:rgba(255,255,255,.5);margin-top:.8rem;max-width:540px;margin-left:auto;margin-right:auto;}
+.pgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;margin-bottom:2rem;}
+.pcard{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:1.8rem 1rem;text-align:center;position:relative;overflow:hidden;transition:transform var(--tr),border-color var(--tr),background var(--tr);}
+.pcard:hover{transform:translateY(-6px);border-color:rgba(192,18,14,.5);background:rgba(192,18,14,.08);}
+.pcard.pop{border-color:var(--red);background:rgba(192,18,14,.1);}
+.pcard__bar{position:absolute;top:0;left:0;right:0;height:3px;background:rgba(255,255,255,.06);}
+.pcard.pop .pcard__bar,.pcard:hover .pcard__bar{background:linear-gradient(90deg,var(--red),var(--red-light));}
+.pcard__badge{display:inline-block;background:var(--red);color:#fff;font-size:.6rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .6rem;border-radius:20px;margin-bottom:.7rem;}
+.pcard__num{font-family:var(--fh);font-size:3rem;font-weight:900;color:#fff;line-height:1;}
+.pcard__num sup{font-size:.95rem;color:var(--red-light);vertical-align:super;}
+.pcard__lbl{font-size:.68rem;color:rgba(255,255,255,.35);letter-spacing:.1em;text-transform:uppercase;margin:.25rem 0 .9rem;}
+.pcard__price{font-family:var(--fh);font-size:1.55rem;font-weight:800;color:var(--red-light);}
+.pcard__note{font-size:.68rem;color:rgba(255,255,255,.3);margin-bottom:1rem;}
+.pcard__hr{height:1px;background:rgba(255,255,255,.07);margin:.9rem 0;}
+.pcard__f{font-size:.75rem;color:rgba(255,255,255,.45);margin-bottom:.35rem;}
+.pnote{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-left:3px solid var(--red);border-radius:6px;padding:1.1rem 1.4rem;display:flex;align-items:flex-start;gap:.9rem;margin-bottom:2.2rem;}
+.pnote p{font-size:.83rem;line-height:1.65;color:rgba(255,255,255,.5);}
+.pnote strong{color:rgba(255,255,255,.85);}
+.pcta{text-align:center;}
+.pcta p{font-size:.8rem;color:rgba(255,255,255,.3);margin-top:.7rem;}
 
-/* ══ WHY CHOOSE ══ */
-.why{background:var(--black);padding:5rem 0;}
-.why__header{text-align:center;margin-bottom:3.5rem;}
-.why__header .section-tag{color:var(--red-light);}
-.why__sub{font-size:1rem;color:rgba(255,255,255,0.5);margin-top:0.8rem;}
-.why__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;}
-.why-card{text-align:center;padding:2rem 1.5rem;border:1px solid rgba(255,255,255,0.06);border-radius:10px;transition:border-color var(--transition),background var(--transition);}
-.why-card:hover{border-color:rgba(192,18,14,0.4);background:rgba(192,18,14,0.04);}
-.why-card__icon{width:56px;height:56px;border-radius:50%;border:2px solid var(--red);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin:0 auto 1.2rem;color:var(--red);}
-.why-card__title{font-family:var(--font-head);font-size:1rem;font-weight:700;color:var(--white);text-transform:uppercase;margin-bottom:0.5rem;}
-.why-card__desc{font-size:0.83rem;line-height:1.6;color:rgba(255,255,255,0.45);}
+/* ── WHY ── */
+.why{background:#000;}
+.why-header{text-align:center;margin-bottom:3rem;}
+.why-header p{font-size:.92rem;color:rgba(255,255,255,.45);margin-top:.7rem;}
+.wgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.3rem;}
+.wcard{text-align:center;padding:2rem 1.4rem;border:1px solid rgba(255,255,255,.06);border-radius:10px;transition:border-color var(--tr),background var(--tr);}
+.wcard:hover{border-color:rgba(192,18,14,.4);background:rgba(192,18,14,.05);}
+.wcard__ico{width:54px;height:54px;border-radius:50%;border:2px solid var(--red);display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin:0 auto 1rem;}
+.wcard__t{font-family:var(--fh);font-size:1rem;font-weight:700;color:#fff;text-transform:uppercase;margin-bottom:.4rem;}
+.wcard__d{font-size:.82rem;line-height:1.6;color:rgba(255,255,255,.4);}
 
-/* ══ CONTACT STRIP ══ */
-.contact-strip{background:var(--red);padding:3.5rem 0;}
-.contact-strip__inner{display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;}
-.contact-strip__text h2{font-family:var(--font-head);font-size:clamp(1.5rem,3vw,2.2rem);font-weight:900;color:var(--white);text-transform:uppercase;}
-.contact-strip__text p{font-size:0.9rem;color:rgba(255,255,255,0.75);margin-top:0.4rem;}
-.contact-strip__actions{display:flex;gap:1rem;flex-wrap:wrap;}
+/* ── CTA STRIP ── */
+.ctastrip{background:var(--red);padding:3rem 0;}
+.ctastrip .container{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;}
+.ctastrip h2{font-family:var(--fh);font-size:clamp(1.4rem,3vw,2rem);font-weight:900;color:#fff;text-transform:uppercase;}
+.ctastrip p{font-size:.88rem;color:rgba(255,255,255,.7);margin-top:.3rem;}
+.ctastrip__btns{display:flex;gap:.8rem;flex-wrap:wrap;}
 
-/* ══ CONTACT SECTION ══ */
-.contact{background:var(--light);padding:5rem 0;}
-.contact__inner{display:grid;grid-template-columns:1fr 1.3fr;gap:4rem;align-items:start;}
-.contact__info h2{font-family:var(--font-head);font-size:2rem;font-weight:800;color:var(--dark);text-transform:uppercase;margin-bottom:0.5rem;}
-.contact__info p{font-size:0.92rem;line-height:1.7;color:var(--text-soft);margin-bottom:1.8rem;}
-.contact__item{display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;}
-.contact__item-icon{width:44px;height:44px;background:var(--red);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
-.contact__item-label{font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-soft);}
-.contact__item-val{font-size:0.95rem;font-weight:600;color:var(--dark);}
-.contact__item-val a:hover{color:var(--red);}
-.contact__form{background:var(--white);border-radius:12px;padding:2.5rem;box-shadow:var(--shadow);}
-.contact__form h3{font-family:var(--font-head);font-size:1.4rem;font-weight:800;text-transform:uppercase;color:var(--dark);margin-bottom:1.5rem;}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
-.form-group{margin-bottom:1.2rem;}
-.form-group label{display:block;font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-soft);margin-bottom:0.4rem;}
-.form-group input,.form-group select,.form-group textarea{width:100%;background:var(--light);border:1.5px solid var(--border);border-radius:6px;padding:0.8rem 1rem;font-family:var(--font-body);font-size:0.92rem;color:var(--text);transition:border-color var(--transition);outline:none;}
-.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(192,18,14,0.08);}
-.form-group textarea{resize:vertical;}
+/* ── CONTACT ── */
+.contact{background:var(--light);}
+.cgrid{display:grid;grid-template-columns:1fr 1.3fr;gap:4rem;align-items:start;}
+.cinfo h2{font-family:var(--fh);font-size:2rem;font-weight:800;text-transform:uppercase;color:#111;margin-bottom:.5rem;}
+.cinfo p{font-size:.9rem;line-height:1.7;color:var(--soft);margin-bottom:1.8rem;}
+.citem{display:flex;align-items:center;gap:.9rem;margin-bottom:1.1rem;}
+.citem__ico{width:42px;height:42px;background:var(--red);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;}
+.citem__lbl{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);}
+.citem__val{font-size:.92rem;font-weight:600;color:#111;}
+.citem__val a:hover{color:var(--red);}
+.cform{background:#fff;border-radius:12px;padding:2.2rem;box-shadow:0 4px 24px rgba(0,0,0,.08);}
+.cform h3{font-family:var(--fh);font-size:1.4rem;font-weight:800;text-transform:uppercase;color:#111;margin-bottom:1.4rem;}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.fg{margin-bottom:1.1rem;}
+.fg label{display:block;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);margin-bottom:.4rem;}
+.fg input,.fg select,.fg textarea{width:100%;background:var(--light);border:1.5px solid var(--border);border-radius:6px;padding:.78rem 1rem;font-family:var(--fb);font-size:.9rem;color:var(--text);outline:none;transition:border-color var(--tr);}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(192,18,14,.08);}
+.fg textarea{resize:vertical;}
 
-/* ══ FOOTER ══ */
-.footer{background:var(--red-dark);padding:3.5rem 0 0;}
-.footer__grid{display:grid;grid-template-columns:1.5fr 1fr 1.3fr 1.2fr;gap:3rem;}
-.footer__brand .logo{font-family:var(--font-head);font-size:1.5rem;font-weight:900;color:var(--white);text-transform:uppercase;margin-bottom:0.2rem;}
-.footer__brand .logo span{color:rgba(255,255,255,0.5);}
-.footer__brand p{font-size:0.83rem;line-height:1.65;color:rgba(255,255,255,0.5);margin:1rem 0 1.3rem;}
-.footer__social{display:flex;gap:0.6rem;}
-.footer__social a{width:34px;height:34px;border-radius:6px;background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);display:flex;align-items:center;justify-content:center;font-size:0.85rem;transition:background var(--transition);}
-.footer__social a:hover{background:rgba(255,255,255,0.25);}
-.footer__heading{font-family:var(--font-head);font-size:1rem;font-weight:800;color:var(--white);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:1.2rem;}
-.footer__links{display:flex;flex-direction:column;gap:0.55rem;}
-.footer__links a{font-size:0.83rem;color:rgba(255,255,255,0.5);transition:color var(--transition);}
-.footer__links a:hover{color:var(--white);}
-.footer__contact-item{display:flex;align-items:center;gap:0.7rem;margin-bottom:0.8rem;font-size:0.83rem;color:rgba(255,255,255,0.55);}
-.footer__contact-item span{font-size:1rem;}
-.footer__quote{margin-top:1.5rem;}
-.footer__bottom{border-top:1px solid rgba(255,255,255,0.1);margin-top:2.5rem;padding:1.2rem 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:0.5rem;}
-.footer__copy{font-size:0.78rem;color:rgba(255,255,255,0.4);}
-.footer__made{font-size:0.78rem;color:rgba(255,255,255,0.4);}
-.footer__made span{color:var(--red-light);}
+/* ── FOOTER ── */
+.footer{background:#6b0c0a;padding:3rem 0 0;}
+.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1.3fr 1.2fr;gap:2.5rem;}
+.fbrand .fl{font-family:var(--fh);font-size:1.45rem;font-weight:900;color:#fff;text-transform:uppercase;}
+.fbrand .fl span{color:rgba(255,255,255,.4);}
+.fbrand p{font-size:.8rem;line-height:1.65;color:rgba(255,255,255,.45);margin:1rem 0 1.2rem;}
+.fsoc{display:flex;gap:.5rem;}
+.fsoc a{width:32px;height:32px;border-radius:6px;background:rgba(255,255,255,.1);color:rgba(255,255,255,.65);display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;transition:background var(--tr);}
+.fsoc a:hover{background:rgba(255,255,255,.22);}
+.fh{font-family:var(--fh);font-size:.95rem;font-weight:800;color:#fff;text-transform:uppercase;letter-spacing:.06em;margin-bottom:1rem;}
+.flinks{display:flex;flex-direction:column;gap:.5rem;}
+.flinks a{font-size:.8rem;color:rgba(255,255,255,.45);transition:color var(--tr);}
+.flinks a:hover{color:#fff;}
+.fci{display:flex;align-items:center;gap:.6rem;margin-bottom:.7rem;font-size:.8rem;color:rgba(255,255,255,.5);}
+.fbot{border-top:1px solid rgba(255,255,255,.1);margin-top:2.5rem;padding:1.1rem 0;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;}
+.fbot span{font-size:.75rem;color:rgba(255,255,255,.35);}
 
-/* ══ REVEAL ══ */
-.reveal{opacity:0;transform:translateY(24px);transition:opacity 0.65s ease,transform 0.65s ease;}
-.reveal.visible{opacity:1;transform:translateY(0);}
+/* ── FLOATING WHATSAPP ── */
+.wa-btn{
+  position:fixed;
+  bottom:2rem;
+  right:2rem;
+  z-index:9999;
+  display:flex;
+  align-items:center;
+  gap:.65rem;
+  background:#25D366;
+  color:#fff;
+  padding:.78rem 1.3rem .78rem 1rem;
+  border-radius:50px;
+  font-family:var(--fb);
+  font-size:.88rem;
+  font-weight:700;
+  box-shadow:0 4px 20px rgba(37,211,102,.5);
+  transition:transform .3s ease,box-shadow .3s ease;
+  animation:waPop 2.8s ease-in-out infinite;
+}
+.wa-btn:hover{
+  transform:translateY(-4px) scale(1.04);
+  box-shadow:0 8px 32px rgba(37,211,102,.65);
+  animation:none;
+}
+.wa-btn svg{flex-shrink:0;}
+.wa-txt{white-space:nowrap;}
+/* pulse ring animation */
+@keyframes waPop{
+  0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.5),0 0 0 0 rgba(37,211,102,.4);}
+  50%{box-shadow:0 4px 28px rgba(37,211,102,.6),0 0 0 12px rgba(37,211,102,0);}
+}
+@media(max-width:600px){
+  .wa-btn{padding:.85rem;border-radius:50%;bottom:1.4rem;right:1.4rem;}
+  .wa-txt{display:none;}
+}
 
-/* ══ RESPONSIVE ══ */
+/* ── REVEAL ── */
+.r{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease;}
+.r.on{opacity:1;transform:translateY(0);}
+
+/* ── RESPONSIVE ── */
 @media(max-width:1024px){
-  .all-services__grid{grid-template-columns:repeat(3,1fr);}
-  .footer__grid{grid-template-columns:1fr 1fr;}
-  .why__grid{grid-template-columns:repeat(2,1fr);}
-  .pricing__inner{grid-template-columns:1fr;}
+  .pgrid{grid-template-columns:repeat(3,1fr);}
+  .fgrid{grid-template-columns:1fr 1fr;}
+  .wgrid{grid-template-columns:repeat(2,1fr);}
+  .pill-grid{grid-template-columns:repeat(3,1fr);}
 }
 @media(max-width:900px){
   .nav__links{display:none;}
-  .nav__burger{display:flex;}
-  .features__grid{grid-template-columns:repeat(2,1fr);}
-  .feature+.feature{border-left:none;}
-  .feature:nth-child(3),.feature:nth-child(4){border-top:1px solid rgba(255,255,255,0.08);}
-  .services__grid{grid-template-columns:1fr 1fr;}
-  .contact__inner{grid-template-columns:1fr;}
-  .all-services__grid{grid-template-columns:repeat(2,1fr);}
-  .topbar__contact{gap:0.8rem;}
+  .burger{display:flex;}
+  .strip .container{grid-template-columns:repeat(2,1fr);}
+  .feat{border-right:none;border-bottom:1px solid rgba(255,255,255,.07);}
+  .svc-grid{grid-template-columns:1fr 1fr;}
+  .cgrid{grid-template-columns:1fr;}
+  .pill-grid{grid-template-columns:repeat(2,1fr);}
+  .topbar .container{justify-content:center;}
 }
-@media(max-width:600px){
-  .hero{min-height:75vh;}
-  .services__grid{grid-template-columns:1fr;}
-  .why__grid{grid-template-columns:1fr 1fr;}
-  .features__grid{grid-template-columns:1fr 1fr;}
-  .all-services__grid{grid-template-columns:1fr 1fr;}
-  .footer__grid{grid-template-columns:1fr;}
-  .form-row{grid-template-columns:1fr;}
-  .contact-strip__inner{flex-direction:column;text-align:center;}
-  .hero__btns{flex-direction:column;}
+@media(max-width:640px){
+  .pgrid{grid-template-columns:repeat(2,1fr);}
+  .svc-grid{grid-template-columns:1fr;}
+  .wgrid{grid-template-columns:1fr 1fr;}
+  .fgrid{grid-template-columns:1fr;}
+  .frow{grid-template-columns:1fr;}
+  .hero__btns{flex-direction:column;align-items:flex-start;}
+  .ctastrip .container{flex-direction:column;text-align:center;}
+  .strip .container{grid-template-columns:1fr 1fr;}
+  .pill-grid{grid-template-columns:1fr 1fr;}
   .topbar{display:none;}
 }
 </style>
 </head>
 <body>
 
-<!-- TOP BAR -->
+<!-- TOPBAR -->
 <div class="topbar">
   <div class="container">
-    <div class="topbar__inner">
-      <div class="topbar__contact">
-        <a href="tel:+254720961362"><span class="icon">📞</span> +254 720 961 362</a>
-        <a href="mailto:info@pestokil.co.ke"><span class="icon">✉</span> info@pestokil.co.ke</a>
-        <a href="#contact"><span class="icon">📍</span> Jogoo Rd, Nairobi</a>
-      </div>
-      <div class="topbar__social">
-        <a href="#" aria-label="Facebook">f</a>
-        <a href="#" aria-label="Instagram">in</a>
-        <a href="https://wa.me/254720961362" aria-label="WhatsApp">W</a>
-      </div>
+    <div class="topbar__left">
+      <a href="tel:+254720961362">📞 +254 720 961 362</a>
+      <a href="mailto:info@pestokil.co.ke">✉ info@pestokil.co.ke</a>
+      <a href="#contact">📍 Jogoo Rd, Nairobi</a>
+    </div>
+    <div class="topbar__right">
+      <a href="#">f</a>
+      <a href="#">ig</a>
+      <a href="https://wa.me/254720961362">W</a>
     </div>
   </div>
 </div>
 
 <!-- NAV -->
-<nav class="nav" id="nav">
-  <div class="container nav__inner">
-    <div class="nav__logo">
-      <div class="nav__logo-icon">PK</div>
-      <div class="nav__logo-text">
+<nav class="nav">
+  <div class="container">
+    <div class="logo">
+      <div class="logo__icon">PK</div>
+      <div class="logo__text">
         <div class="brand">Pesto<span>kil</span></div>
         <div class="sub">Pest Kenya</div>
       </div>
     </div>
     <ul class="nav__links">
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#about">About Us</a></li>
+      <li><a href="#home" class="act">Home</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="https://wa.me/254720961362?text=Hi%20Pestokil!%20I%27d%20like%20to%20request%20a%20quote." target="_blank" class="btn btn--red nav__cta">Request Quote</a>
-    <button class="nav__burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <a href="https://wa.me/254720961362?text=Hi%20Pestokil!%20I%27d%20like%20to%20request%20a%20quote." target="_blank" class="btn btn-red nav__cta">Request Quote</a>
+    <button class="burger" id="burger"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
 <!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <button class="mobile-menu__close" id="menuClose">✕</button>
+<div class="mmenu" id="mmenu">
+  <button class="mmenu__x" id="mx">✕</button>
   <ul>
     <li><a href="#home" class="ml">Home</a></li>
-    <li><a href="#about" class="ml">About Us</a></li>
+    <li><a href="#about" class="ml">About</a></li>
     <li><a href="#services" class="ml">Services</a></li>
     <li><a href="#pricing" class="ml">Pricing</a></li>
     <li><a href="#contact" class="ml">Contact</a></li>
   </ul>
 </div>
 
-<!-- HERO -->
+<!-- HERO — background is a real fumigation photo via CSS ::before -->
 <section class="hero" id="home">
-  <div class="hero__img-fallback"></div>
-  <div class="hero__img"></div>
-  <div class="hero__bg"></div>
-  <div class="container">
-    <div class="hero__content">
-      <span class="hero__tag">Professional Pest Control</span>
-      <h1 class="hero__title">We Eliminate Pests.</h1>
-      <span class="hero__title-red">You Enjoy Peace.</span>
-      <p class="hero__sub">Pestokil Pest Kenya provides reliable, safe and effective pest control & fumigation solutions for homes and businesses across Nairobi.</p>
-      <div class="hero__btns">
-        <a href="#services" class="btn btn--red">Our Services &rarr;</a>
-        <a href="tel:+254720961362" class="btn btn--outline-white">Call Us 📞</a>
-      </div>
+  <div class="hero__content">
+    <span class="hero__tag">Professional Pest Control</span>
+    <h1 class="hero__h1">We Eliminate Pests.</h1>
+    <span class="hero__red">You Enjoy Peace.</span>
+    <p class="hero__sub">Pestokil Pest Kenya provides reliable, safe and effective pest control &amp; fumigation solutions for homes and businesses across Nairobi.</p>
+    <div class="hero__btns">
+      <a href="#services" class="btn btn-red">Our Services →</a>
+      <a href="tel:+254720961362" class="btn btn-wt">📞 Call Us Now</a>
     </div>
   </div>
 </section>
 
 <!-- FEATURES STRIP -->
-<div class="features">
+<div class="strip">
   <div class="container">
-    <div class="features__grid">
-      <div class="feature reveal">
-        <div class="feature__icon">🛡️</div>
-        <div><div class="feature__title">Safe & Effective</div><div class="feature__sub">Eco-friendly solutions</div></div>
-      </div>
-      <div class="feature reveal">
-        <div class="feature__icon">👷</div>
-        <div><div class="feature__title">Expert Technicians</div><div class="feature__sub">Trained & certified</div></div>
-      </div>
-      <div class="feature reveal">
-        <div class="feature__icon">⚡</div>
-        <div><div class="feature__title">Quick Response</div><div class="feature__sub">Fast & reliable service</div></div>
-      </div>
-      <div class="feature reveal">
-        <div class="feature__icon">🏆</div>
-        <div><div class="feature__title">Satisfaction Guaranteed</div><div class="feature__sub">Your peace is our priority</div></div>
-      </div>
-    </div>
+    <div class="feat r"><div class="feat__ico">🛡️</div><div><div class="feat__t">Safe &amp; Effective</div><div class="feat__s">Eco-friendly solutions</div></div></div>
+    <div class="feat r"><div class="feat__ico">👷</div><div><div class="feat__t">Expert Technicians</div><div class="feat__s">Trained &amp; certified</div></div></div>
+    <div class="feat r"><div class="feat__ico">⚡</div><div><div class="feat__t">Quick Response</div><div class="feat__s">Fast &amp; reliable</div></div></div>
+    <div class="feat r"><div class="feat__ico">🏆</div><div><div class="feat__t">Satisfaction Guaranteed</div><div class="feat__s">Your peace is our priority</div></div></div>
   </div>
 </div>
 
 <!-- SERVICES -->
-<section class="services section" id="services">
+<section class="services sec" id="services">
   <div class="container">
-    <div class="services__header reveal">
-      <div>
-        <span class="section-tag">Our Services</span>
-        <h2 class="section-title">Complete Pest Control Solutions</h2>
-      </div>
-      <a href="#all-services" class="btn btn--outline-red">View All Services &rarr;</a>
+    <div class="svc-header r">
+      <div><span class="stag">Our Services</span><h2 class="sh2">Complete Pest Control Solutions</h2></div>
+      <a href="#allsvc" class="btn btn-or">View All Services →</a>
     </div>
-    <div class="services__grid">
-      <div class="scard reveal">
+    <div class="svc-grid">
+
+      <div class="scard r">
         <div class="scard__img">
-          <img src="images/fumigation.jpg" alt="Fumigation service" onerror="this.parentElement.innerHTML='<div class=\'scard__img-placeholder\'>🧪</div>'"/>
-          <div class="scard__badge">🧪</div>
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&auto=format&fit=crop" alt="Fumigation technician spraying"/>
+          <div class="scard__dot">🧪</div>
         </div>
         <div class="scard__body">
           <div class="scard__title">Fumigation</div>
-          <p class="scard__desc">Advanced fumigation services to eliminate termites, bedbugs, cockroaches and more. Full property treatment with certified chemicals.</p>
-          <a href="#contact" class="scard__link">Learn More &rarr;</a>
+          <p class="scard__desc">Advanced fumigation by certified technicians. Full property treatment to eliminate termites, bedbugs, cockroaches and more.</p>
+          <a href="#contact" class="scard__link">Learn More →</a>
         </div>
       </div>
-      <div class="scard reveal">
+
+      <div class="scard r">
         <div class="scard__img">
-          <img src="images/general-pest.jpg" alt="General pest control" onerror="this.parentElement.innerHTML='<div class=\'scard__img-placeholder\'>🐜</div>'"/>
-          <div class="scard__badge">🐜</div>
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80&auto=format&fit=crop" alt="General pest control"/>
+          <div class="scard__dot">🐜</div>
         </div>
         <div class="scard__body">
           <div class="scard__title">General Pest Control</div>
-          <p class="scard__desc">Eliminate common pests and prevent infestations from returning. Integrated pest management for lasting protection.</p>
-          <a href="#contact" class="scard__link">Learn More &rarr;</a>
+          <p class="scard__desc">Eliminate all common pests and prevent future infestations. Integrated pest management for lasting protection.</p>
+          <a href="#contact" class="scard__link">Learn More →</a>
         </div>
       </div>
-      <div class="scard reveal">
+
+      <div class="scard r">
         <div class="scard__img">
-          <img src="images/bedbug.jpg" alt="Bed bug control" onerror="this.parentElement.innerHTML='<div class=\'scard__img-placeholder\'>🐛</div>'"/>
-          <div class="scard__badge">🐛</div>
+          <img src="https://images.unsplash.com/photo-1611186871525-daba7d5eeece?w=600&q=80&auto=format&fit=crop" alt="Bed bug control"/>
+          <div class="scard__dot">🐛</div>
         </div>
         <div class="scard__body">
           <div class="scard__title">Bedbug Control</div>
-          <p class="scard__desc">Specialized treatment to detect, eliminate and prevent bedbug infestations. Heat treatment & chemical options available.</p>
-          <a href="#contact" class="scard__link">Learn More &rarr;</a>
+          <p class="scard__desc">Specialized treatment to detect, eliminate and prevent bedbug infestations. Heat treatment &amp; chemical options available.</p>
+          <a href="#contact" class="scard__link">Learn More →</a>
         </div>
       </div>
-      <div class="scard reveal">
+
+      <div class="scard r">
         <div class="scard__img">
-          <img src="images/rodent.jpg" alt="Rodent control" onerror="this.parentElement.innerHTML='<div class=\'scard__img-placeholder\'>🐀</div>'"/>
-          <div class="scard__badge">🐀</div>
+          <img src="https://images.unsplash.com/photo-1584552539969-6e5977dbf4e4?w=600&q=80&auto=format&fit=crop" alt="Rodent control"/>
+          <div class="scard__dot">🐀</div>
         </div>
         <div class="scard__body">
           <div class="scard__title">Rodent Control</div>
-          <p class="scard__desc">Rats and mice control for homes and commercial properties. Trapping, baiting and exclusion methods used.</p>
-          <a href="#contact" class="scard__link">Learn More &rarr;</a>
+          <p class="scard__desc">Rats and mice extermination for homes and commercial properties. Trapping, baiting and exclusion methods.</p>
+          <a href="#contact" class="scard__link">Learn More →</a>
         </div>
       </div>
-      <div class="scard reveal">
+
+      <div class="scard r">
         <div class="scard__img">
-          <img src="images/termite.jpg" alt="Termite control" onerror="this.parentElement.innerHTML='<div class=\'scard__img-placeholder\'>🪲</div>'"/>
-          <div class="scard__badge">🪲</div>
+          <img src="https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?w=600&q=80&auto=format&fit=crop" alt="Termite control"/>
+          <div class="scard__dot">🪲</div>
         </div>
         <div class="scard__body">
           <div class="scard__title">Termite Control</div>
-          <p class="scard__desc">Protect your property from costly termite damage. Inspection, treatment and long-term prevention plans.</p>
-          <a href="#contact" class="scard__link">Learn More &rarr;</a>
+          <p class="scard__desc">Protect your property from costly termite damage. Full inspection, treatment and long-term prevention plans.</p>
+          <a href="#contact" class="scard__link">Learn More →</a>
         </div>
       </div>
-      <div class="scard reveal">
+
+      <div class="scard r">
         <div class="scard__img">
-          <img src="images/mosquito.jpg" alt="Mosquito control" onerror="this.parentElement.innerHTML='<div class=\'scard__img-placeholder\'>🦟</div>'"/>
-          <div class="scard__badge">🦟</div>
+          <img src="https://images.unsplash.com/photo-1527853787696-f7be74f2e39a?w=600&q=80&auto=format&fit=crop" alt="Mosquito control"/>
+          <div class="scard__dot">🦟</div>
         </div>
         <div class="scard__body">
-          <div class="scard__title">Mosquito & Fly Control</div>
-          <p class="scard__desc">Effective mosquito and fly control for indoor and outdoor spaces. Safe for children and pets.</p>
-          <a href="#contact" class="scard__link">Learn More &rarr;</a>
+          <div class="scard__title">Mosquito &amp; Fly Control</div>
+          <p class="scard__desc">Effective mosquito and fly control for indoors and outdoors. Safe for children, pets and the environment.</p>
+          <a href="#contact" class="scard__link">Learn More →</a>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- ALL SERVICES LIST -->
-<section class="all-services" id="all-services">
+<!-- ALL SERVICES -->
+<section class="allsvc sec" id="allsvc">
   <div class="container">
-    <div class="reveal">
-      <span class="section-tag">Full Service List</span>
-      <h2 class="section-title">Everything We Handle</h2>
-    </div>
-    <div class="all-services__grid">
-      <div class="service-pill reveal">Spider Extermination</div>
-      <div class="service-pill reveal">Ant Extermination</div>
-      <div class="service-pill reveal">Bed Bug Extermination</div>
-      <div class="service-pill reveal">Flea & Mite Extermination</div>
-      <div class="service-pill reveal">Mosquito Extermination</div>
-      <div class="service-pill reveal">Termite Extermination</div>
-      <div class="service-pill reveal">Cockroach Extermination</div>
-      <div class="service-pill reveal">Hornet & Wasp Extermination</div>
-      <div class="service-pill reveal">Bee Extermination</div>
-      <div class="service-pill reveal">Rodent Extermination</div>
-      <div class="service-pill reveal">Bat Extermination</div>
-      <div class="service-pill reveal">Bug & Insect Extermination</div>
-      <div class="service-pill reveal">Home Inspection</div>
-      <div class="service-pill reveal">General Pest Inspection</div>
-      <div class="service-pill reveal">Termite Inspection</div>
-      <div class="service-pill reveal">Bat Control</div>
-      <div class="service-pill reveal">Bed Bug Control</div>
-      <div class="service-pill reveal">Bed Bug Treatment</div>
-      <div class="service-pill reveal">Bedbug Fumigation</div>
-      <div class="service-pill reveal">Bedbug Removal</div>
-      <div class="service-pill reveal">Bedbug Heat Treatment</div>
-      <div class="service-pill reveal">Cockroach Control</div>
-      <div class="service-pill reveal">Cockroach Treatment</div>
-      <div class="service-pill reveal">Commercial Pest Control</div>
-      <div class="service-pill reveal">Flea Control</div>
-      <div class="service-pill reveal">Flea Treatment</div>
-      <div class="service-pill reveal">Fumigation Services Kenya</div>
-      <div class="service-pill reveal">Integrated Pest Management</div>
-      <div class="service-pill reveal">Mice Control</div>
-      <div class="service-pill reveal">Mosquito Control</div>
-      <div class="service-pill reveal">Pest Removal</div>
-      <div class="service-pill reveal">Property Inspection</div>
-      <div class="service-pill reveal">Rat Control</div>
-      <div class="service-pill reveal">Residential Pest Control</div>
-      <div class="service-pill reveal">Snake Control & Removal</div>
-      <div class="service-pill reveal">Termite Control</div>
-      <div class="service-pill reveal">Waste Management</div>
-      <div class="service-pill reveal">Drainage Systems</div>
-      <div class="service-pill reveal">Prevention Services</div>
-      <div class="service-pill reveal">Health Services</div>
+    <div class="r"><span class="stag">Full Service List</span><h2 class="sh2">Everything We Handle</h2></div>
+    <div class="pill-grid">
+      <div class="pill r">Spider Extermination</div><div class="pill r">Ant Extermination</div>
+      <div class="pill r">Bed Bug Extermination</div><div class="pill r">Flea &amp; Mite Extermination</div>
+      <div class="pill r">Mosquito Extermination</div><div class="pill r">Termite Extermination</div>
+      <div class="pill r">Cockroach Extermination</div><div class="pill r">Hornet &amp; Wasp Extermination</div>
+      <div class="pill r">Bee Extermination</div><div class="pill r">Rodent Extermination</div>
+      <div class="pill r">Bat Extermination</div><div class="pill r">Bug &amp; Insect Extermination</div>
+      <div class="pill r">Home Inspection</div><div class="pill r">General Pest Inspection</div>
+      <div class="pill r">Termite Inspection</div><div class="pill r">Bat Control</div>
+      <div class="pill r">Bed Bug Treatment</div><div class="pill r">Bedbug Fumigation</div>
+      <div class="pill r">Bedbug Heat Treatment</div><div class="pill r">Bedbug Removal</div>
+      <div class="pill r">Cockroach Control</div><div class="pill r">Cockroach Treatment</div>
+      <div class="pill r">Commercial Pest Control</div><div class="pill r">Flea Control &amp; Treatment</div>
+      <div class="pill r">Fumigation Services Kenya</div><div class="pill r">Integrated Pest Management</div>
+      <div class="pill r">Mice Control</div><div class="pill r">Mosquito Control</div>
+      <div class="pill r">Pest Removal</div><div class="pill r">Property Inspection</div>
+      <div class="pill r">Rat Control</div><div class="pill r">Residential Pest Control</div>
+      <div class="pill r">Snake Control &amp; Removal</div><div class="pill r">Termite Control</div>
+      <div class="pill r">Waste Management</div><div class="pill r">Drainage Systems</div>
+      <div class="pill r">Prevention Services</div><div class="pill r">Health Services</div>
     </div>
   </div>
 </section>
 
 <!-- PRICING -->
-<section class="pricing" id="pricing">
+<section class="pricing sec" id="pricing">
   <div class="container">
-    <div class="pricing__inner">
-      <div class="pricing__text reveal">
-        <span class="section-tag">Transparent Pricing</span>
-        <h2 class="section-title section-title--white">Affordable Pest<br/>Control Rates</h2>
-        <p>We offer competitive pricing based on property size and type of pest treatment required. Get a free inspection and quote before any work begins — no hidden charges.</p>
-        <a href="https://wa.me/254720961362?text=Hi%20Pestokil!%20I%27d%20like%20a%20quote%20for%20pest%20control." target="_blank" class="btn btn--red">Get Free Quote &rarr;</a>
+    <div class="pricing-header r">
+      <span class="stag" style="color:var(--red-light)">Transparent Pricing</span>
+      <h2 class="sh2 sh2-w">Fumigation &amp; Pest Control Rates</h2>
+      <p>Prices based on house size. Final cost depends on infestation level &amp; pest type. Contact us for a free assessment.</p>
+    </div>
+
+    <div class="pgrid">
+      <div class="pcard r">
+        <div class="pcard__bar"></div>
+        <div class="pcard__num">1<sup>bd</sup></div>
+        <div class="pcard__lbl">Bedsitter / 1 Bedroom</div>
+        <div class="pcard__price">KSh 7,000</div>
+        <div class="pcard__note">Starting from</div>
+        <div class="pcard__hr"></div>
+        <div class="pcard__f">✓ Full fumigation</div>
+        <div class="pcard__f">✓ Eco-safe chemicals</div>
+        <div class="pcard__f">✓ Same-day available</div>
       </div>
-      <div class="pricing__card reveal">
-        <div class="pricing__range"><span>KSh</span> 7,000</div>
-        <div class="pricing__label">Starting from &nbsp;·&nbsp; up to KSh 25,000+</div>
-        <div class="pricing__includes">
-          <div class="pricing__item"><div class="tick">✓</div> Free initial inspection & assessment</div>
-          <div class="pricing__item"><div class="tick">✓</div> Certified, eco-friendly chemicals used</div>
-          <div class="pricing__item"><div class="tick">✓</div> Residential & commercial properties</div>
-          <div class="pricing__item"><div class="tick">✓</div> Follow-up visit included</div>
-          <div class="pricing__item"><div class="tick">✓</div> 100% satisfaction guarantee</div>
-          <div class="pricing__item"><div class="tick">✓</div> Same-day service available</div>
-        </div>
+      <div class="pcard r">
+        <div class="pcard__bar"></div>
+        <div class="pcard__num">2<sup>bd</sup></div>
+        <div class="pcard__lbl">2 Bedroom House</div>
+        <div class="pcard__price">KSh 9,000</div>
+        <div class="pcard__note">Starting from</div>
+        <div class="pcard__hr"></div>
+        <div class="pcard__f">✓ Full fumigation</div>
+        <div class="pcard__f">✓ Eco-safe chemicals</div>
+        <div class="pcard__f">✓ Follow-up visit</div>
       </div>
+      <div class="pcard pop r">
+        <div class="pcard__bar"></div>
+        <div class="pcard__badge">Most Popular</div>
+        <div class="pcard__num">3<sup>bd</sup></div>
+        <div class="pcard__lbl">3 Bedroom House</div>
+        <div class="pcard__price">KSh 13,000</div>
+        <div class="pcard__note">Starting from</div>
+        <div class="pcard__hr"></div>
+        <div class="pcard__f">✓ Full fumigation</div>
+        <div class="pcard__f">✓ Eco-safe chemicals</div>
+        <div class="pcard__f">✓ Follow-up visit</div>
+      </div>
+      <div class="pcard r">
+        <div class="pcard__bar"></div>
+        <div class="pcard__num">4<sup>bd</sup></div>
+        <div class="pcard__lbl">4 Bedroom House</div>
+        <div class="pcard__price">KSh 16,000</div>
+        <div class="pcard__note">Starting from</div>
+        <div class="pcard__hr"></div>
+        <div class="pcard__f">✓ Full fumigation</div>
+        <div class="pcard__f">✓ Eco-safe chemicals</div>
+        <div class="pcard__f">✓ Follow-up visit</div>
+      </div>
+      <div class="pcard r">
+        <div class="pcard__bar"></div>
+        <div class="pcard__num">5<sup>bd+</sup></div>
+        <div class="pcard__lbl">5+ Bed / Commercial</div>
+        <div class="pcard__price">KSh 20,000+</div>
+        <div class="pcard__note">Custom quote</div>
+        <div class="pcard__hr"></div>
+        <div class="pcard__f">✓ Full fumigation</div>
+        <div class="pcard__f">✓ Commercial grade</div>
+        <div class="pcard__f">✓ Custom plan</div>
+      </div>
+    </div>
+
+    <div class="pnote r">
+      <span style="font-size:1.2rem">⚠️</span>
+      <p><strong>Please note:</strong> These are <strong>starting rates</strong> for standard fumigation. Final cost depends on <strong>level of infestation</strong> and <strong>type of pest</strong>. Severe cases or specialty pests (termites, bedbugs, bats, snakes) may need a custom assessment. <strong>Call or WhatsApp for a free inspection and accurate quote.</strong></p>
+    </div>
+
+    <div class="pcta r">
+      <a href="https://wa.me/254720961362?text=Hi%20Pestokil!%20I%27d%20like%20a%20free%20quote%20for%20pest%20control." target="_blank" class="btn btn-red">💬 Get Free Quote on WhatsApp →</a>
+      <p>No inspection fees · No hidden charges · Fast response</p>
     </div>
   </div>
 </section>
 
 <!-- WHY CHOOSE -->
-<section class="why" id="about">
+<section class="why sec" id="about">
   <div class="container">
-    <div class="why__header reveal">
-      <span class="section-tag">Why Choose Pestokil?</span>
-      <h2 class="section-title section-title--white">Your Safety. Our Priority.</h2>
-      <p class="why__sub">Trusted by hundreds of homes and businesses across Nairobi</p>
+    <div class="why-header r">
+      <span class="stag" style="color:var(--red-light)">Why Choose Pestokil?</span>
+      <h2 class="sh2 sh2-w">Your Safety. Our Priority.</h2>
+      <p>Trusted by hundreds of homes and businesses across Nairobi</p>
     </div>
-    <div class="why__grid">
-      <div class="why-card reveal">
-        <div class="why-card__icon">🛡️</div>
-        <div class="why-card__title">Safe Treatments</div>
-        <p class="why-card__desc">We use eco-friendly products safe for your family and pets. No harmful residue left behind.</p>
-      </div>
-      <div class="why-card reveal">
-        <div class="why-card__icon">👷</div>
-        <div class="why-card__title">Experienced Team</div>
-        <p class="why-card__desc">Our professionals are highly trained, certified, and experienced in all pest types.</p>
-      </div>
-      <div class="why-card reveal">
-        <div class="why-card__icon">⚡</div>
-        <div class="why-card__title">Fast & Reliable</div>
-        <p class="why-card__desc">We respond quickly and get the job done right — often same day for urgent cases.</p>
-      </div>
-      <div class="why-card reveal">
-        <div class="why-card__icon">👍</div>
-        <div class="why-card__title">Trusted Results</div>
-        <p class="why-card__desc">Proven methods for long-lasting pest protection with guaranteed satisfaction.</p>
-      </div>
+    <div class="wgrid">
+      <div class="wcard r"><div class="wcard__ico">🛡️</div><div class="wcard__t">Safe Treatments</div><p class="wcard__d">Eco-friendly products safe for family and pets. No harmful residue.</p></div>
+      <div class="wcard r"><div class="wcard__ico">👷</div><div class="wcard__t">Experienced Team</div><p class="wcard__d">Highly trained, certified professionals experienced in all pest types.</p></div>
+      <div class="wcard r"><div class="wcard__ico">⚡</div><div class="wcard__t">Fast &amp; Reliable</div><p class="wcard__d">Quick response — often same day for urgent pest problems.</p></div>
+      <div class="wcard r"><div class="wcard__ico">👍</div><div class="wcard__t">Trusted Results</div><p class="wcard__d">Proven methods for long-lasting pest protection. 100% satisfaction.</p></div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT STRIP -->
-<div class="contact-strip">
+<!-- CTA STRIP -->
+<div class="ctastrip">
   <div class="container">
-    <div class="contact-strip__inner">
-      <div class="contact-strip__text">
-        <h2>Ready to Get Rid of Pests?</h2>
-        <p>Call us now or send a WhatsApp message — we respond fast!</p>
-      </div>
-      <div class="contact-strip__actions">
-        <a href="tel:+254720961362" class="btn btn--white">📞 0720 961 362</a>
-        <a href="https://wa.me/254720961362?text=Hi%20Pestokil!%20I%20need%20pest%20control%20services." target="_blank" class="btn btn--outline-white">💬 WhatsApp Us</a>
-      </div>
+    <div class="r"><h2>Ready to Get Rid of Pests?</h2><p>Call us now or WhatsApp — we respond fast!</p></div>
+    <div class="ctastrip__btns r">
+      <a href="tel:+254720961362" class="btn btn-white">📞 0720 961 362</a>
+      <a href="https://wa.me/254720961362?text=Hi%20Pestokil!%20I%20need%20pest%20control." target="_blank" class="btn btn-wt">💬 WhatsApp Us</a>
     </div>
   </div>
 </div>
 
 <!-- CONTACT -->
-<section class="contact" id="contact">
+<section class="contact sec" id="contact">
   <div class="container">
-    <div class="contact__inner">
-      <div class="contact__info reveal">
+    <div class="cgrid">
+      <div class="cinfo r">
         <h2>Get In Touch</h2>
-        <p>Request a free quote or book an inspection. We serve Nairobi and surrounding areas. Fast response guaranteed.</p>
-        <div class="contact__item">
-          <div class="contact__item-icon">📍</div>
-          <div>
-            <div class="contact__item-label">Location</div>
-            <div class="contact__item-val">Jogoo Road Commercial Building, Nairobi</div>
-          </div>
-        </div>
-        <div class="contact__item">
-          <div class="contact__item-icon">📞</div>
-          <div>
-            <div class="contact__item-label">Phone / WhatsApp</div>
-            <div class="contact__item-val"><a href="tel:+254720961362">0720 961 362</a></div>
-          </div>
-        </div>
-        <div class="contact__item">
-          <div class="contact__item-icon">✉</div>
-          <div>
-            <div class="contact__item-label">Email</div>
-            <div class="contact__item-val"><a href="mailto:info@pestokil.co.ke">info@pestokil.co.ke</a></div>
-          </div>
-        </div>
-        <div class="contact__item">
-          <div class="contact__item-icon">🕐</div>
-          <div>
-            <div class="contact__item-label">Working Hours</div>
-            <div class="contact__item-val">Mon – Sat: 7am – 7pm</div>
-          </div>
-        </div>
-        <a href="https://wa.me/254720961362?text=Hi%20Pestokil!%20I%27d%20like%20to%20request%20a%20free%20pest%20inspection." target="_blank" class="btn btn--red" style="margin-top:1rem;">💬 Chat on WhatsApp</a>
+        <p>Request a free quote or book an inspection. We serve Nairobi and surrounding areas.</p>
+        <div class="citem"><div class="citem__ico">📍</div><div><div class="citem__lbl">Location</div><div class="citem__val">Jogoo Road Commercial Building, Nairobi</div></div></div>
+        <div class="citem"><div class="citem__ico">📞</div><div><div class="citem__lbl">Phone / WhatsApp</div><div class="citem__val"><a href="tel:+254720961362">0720 961 362</a></div></div></div>
+        <div class="citem"><div class="citem__ico">✉</div><div><div class="citem__lbl">Email</div><div class="citem__val"><a href="mailto:info@pestokil.co.ke">info@pestokil.co.ke</a></div></div></div>
+        <div class="citem"><div class="citem__ico">🕐</div><div><div class="citem__lbl">Hours</div><div class="citem__val">Mon – Sat: 7am – 7pm</div></div></div>
+        <a href="https://wa.me/254720961362" target="_blank" class="btn btn-red" style="margin-top:1.2rem;">💬 Chat on WhatsApp</a>
       </div>
-
-      <div class="contact__form reveal">
+      <div class="cform r">
         <h3>Request a Free Quote</h3>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="fname">Full Name</label>
-            <input type="text" id="fname" placeholder="John Kamau" required/>
-          </div>
-          <div class="form-group">
-            <label for="fphone">Phone Number</label>
-            <input type="tel" id="fphone" placeholder="07XX XXX XXX" required/>
-          </div>
+        <div class="frow">
+          <div class="fg"><label>Full Name</label><input type="text" id="fn" placeholder="John Kamau" required/></div>
+          <div class="fg"><label>Phone Number</label><input type="tel" id="fp" placeholder="07XX XXX XXX" required/></div>
         </div>
-        <div class="form-group">
-          <label for="fservice">Service Required</label>
-          <select id="fservice">
+        <div class="fg"><label>Service Required</label>
+          <select id="fs">
             <option value="">Select a service…</option>
-            <option>Fumigation</option>
-            <option>Bed Bug Control</option>
-            <option>Cockroach Control</option>
-            <option>Rodent Control</option>
-            <option>Termite Control</option>
-            <option>Mosquito Control</option>
-            <option>General Pest Control</option>
-            <option>Commercial Pest Control</option>
-            <option>Pest Inspection</option>
-            <option>Other</option>
+            <option>Fumigation</option><option>Bed Bug Control</option><option>Cockroach Control</option>
+            <option>Rodent Control</option><option>Termite Control</option><option>Mosquito Control</option>
+            <option>General Pest Control</option><option>Commercial Pest Control</option><option>Pest Inspection</option><option>Other</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="flocation">Your Location</label>
-          <input type="text" id="flocation" placeholder="Estate / Area in Nairobi"/>
-        </div>
-        <div class="form-group">
-          <label for="fmsg">Additional Details</label>
-          <textarea id="fmsg" rows="3" placeholder="Describe the pest problem or any other details…"></textarea>
-        </div>
-        <button type="button" class="btn btn--red btn--full" id="submitBtn" style="width:100%;justify-content:center;">Send via WhatsApp &rarr;</button>
+        <div class="fg"><label>Your Location / Estate</label><input type="text" id="fl" placeholder="e.g. South B, Westlands…"/></div>
+        <div class="fg"><label>Details</label><textarea id="fm" rows="3" placeholder="Describe the pest problem…"></textarea></div>
+        <button type="button" id="sendBtn" class="btn btn-red btn-full">Send via WhatsApp →</button>
       </div>
     </div>
   </div>
@@ -638,103 +637,76 @@ ul{list-style:none;}
 <!-- FOOTER -->
 <footer class="footer">
   <div class="container">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <div class="logo">Pesto<span>kil</span> Pest Kenya</div>
-        <p>Pestokil Pest Kenya is your trusted partner in pest control. We provide safe, effective and affordable solutions for your home and business across Nairobi.</p>
-        <div class="footer__social">
-          <a href="#" aria-label="Facebook">f</a>
-          <a href="#" aria-label="Instagram">in</a>
-          <a href="https://wa.me/254720961362" aria-label="WhatsApp">W</a>
+    <div class="fgrid">
+      <div class="fbrand">
+        <div class="fl">Pesto<span>kil</span> Pest Kenya</div>
+        <p>Your trusted partner in pest control. Safe, effective and affordable solutions for homes and businesses across Nairobi.</p>
+        <div class="fsoc">
+          <a href="#">f</a><a href="#">ig</a><a href="https://wa.me/254720961362">W</a>
         </div>
       </div>
       <div>
-        <div class="footer__heading">Quick Links</div>
-        <div class="footer__links">
-          <a href="#home">Home</a>
-          <a href="#about">About Us</a>
-          <a href="#services">Services</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#contact">Contact</a>
+        <div class="fh">Quick Links</div>
+        <div class="flinks">
+          <a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a>
+          <a href="#pricing">Pricing</a><a href="#contact">Contact</a>
         </div>
       </div>
       <div>
-        <div class="footer__heading">Our Services</div>
-        <div class="footer__links">
-          <a href="#services">Fumigation</a>
-          <a href="#services">General Pest Control</a>
-          <a href="#services">Bedbug Control</a>
-          <a href="#services">Termite Control</a>
-          <a href="#services">Rodent Control</a>
-          <a href="#services">Mosquito Control</a>
-          <a href="#services">Snake Removal</a>
+        <div class="fh">Our Services</div>
+        <div class="flinks">
+          <a href="#services">Fumigation</a><a href="#services">Bedbug Control</a>
+          <a href="#services">Termite Control</a><a href="#services">Rodent Control</a>
+          <a href="#services">Mosquito Control</a><a href="#services">Snake Removal</a>
           <a href="#services">Commercial Pest Control</a>
         </div>
       </div>
       <div>
-        <div class="footer__heading">Contact Us</div>
-        <div class="footer__contact-item"><span>📞</span> +254 720 961 362</div>
-        <div class="footer__contact-item"><span>✉</span> info@pestokil.co.ke</div>
-        <div class="footer__contact-item"><span>📍</span> Jogoo Rd, Nairobi</div>
-        <div class="footer__quote">
-          <a href="https://wa.me/254720961362?text=Hi%20Pestokil!%20I%27d%20like%20to%20request%20a%20quote." target="_blank" class="btn btn--outline-white" style="font-size:0.82rem;padding:0.65rem 1.2rem;">Request a Quote &rarr;</a>
-        </div>
+        <div class="fh">Contact Us</div>
+        <div class="fci">📞 +254 720 961 362</div>
+        <div class="fci">✉ info@pestokil.co.ke</div>
+        <div class="fci">📍 Jogoo Rd, Nairobi</div>
+        <a href="https://wa.me/254720961362?text=Hi%20Pestokil!%20I%27d%20like%20a%20quote." target="_blank" class="btn btn-wt" style="margin-top:1rem;font-size:.8rem;padding:.6rem 1.1rem;">Request a Quote →</a>
       </div>
     </div>
-    <div class="footer__bottom">
-      <div class="footer__copy">© 2025 Pestokil Pest Kenya. All Rights Reserved.</div>
-      <div class="footer__made">Designed with <span>❤</span> in Kenya</div>
+    <div class="fbot">
+      <span>© 2025 Pestokil Pest Kenya. All Rights Reserved.</span>
+      <span>Designed with ❤ in Kenya</span>
     </div>
   </div>
 </footer>
 
-<script>
-// NAV scroll sticky color
-const nav = document.getElementById('nav');
+<!-- ✅ FLOATING WHATSAPP BUTTON — pulses to grab attention -->
+<a href="https://wa.me/254720961362?text=Hi%20Pestokil!%20I%27d%20like%20to%20enquire%20about%20pest%20control%20services." target="_blank" class="wa-btn" aria-label="Chat on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="white">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+  <span class="wa-txt">Chat with us</span>
+</a>
 
+<script>
 // Burger menu
-const burger = document.getElementById('burger');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuClose = document.getElementById('menuClose');
-burger.addEventListener('click', () => mobileMenu.classList.add('open'));
-menuClose.addEventListener('click', () => mobileMenu.classList.remove('open'));
-document.querySelectorAll('.ml').forEach(l => l.addEventListener('click', () => mobileMenu.classList.remove('open')));
+document.getElementById('burger').onclick=()=>document.getElementById('mmenu').classList.add('open');
+document.getElementById('mx').onclick=()=>document.getElementById('mmenu').classList.remove('open');
+document.querySelectorAll('.ml').forEach(l=>l.addEventListener('click',()=>document.getElementById('mmenu').classList.remove('open')));
 
 // Scroll reveal
-const reveals = document.querySelectorAll('.reveal');
-const ro = new IntersectionObserver((entries) => {
-  entries.forEach((e, i) => {
-    if (e.isIntersecting) {
-      setTimeout(() => e.target.classList.add('visible'), 80);
-      ro.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.08 });
-reveals.forEach(el => ro.observe(el));
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target);}});
+},{threshold:0.08});
+document.querySelectorAll('.r').forEach(el=>obs.observe(el));
 
-// Active nav
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav__links a');
-window.addEventListener('scroll', () => {
-  let cur = '';
-  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) cur = s.id; });
-  navLinks.forEach(l => {
-    l.classList.remove('active');
-    if (l.getAttribute('href') === '#' + cur) l.classList.add('active');
-  });
-});
-
-// Form → WhatsApp
-document.getElementById('submitBtn').addEventListener('click', () => {
-  const name = document.getElementById('fname').value.trim();
-  const phone = document.getElementById('fphone').value.trim();
-  const service = document.getElementById('fservice').value || 'Not specified';
-  const location = document.getElementById('flocation').value.trim() || 'Not provided';
-  const msg = document.getElementById('fmsg').value.trim() || 'N/A';
-  if (!name || !phone) { alert('Please fill in your name and phone number.'); return; }
-  const text = `Hi Pestokil Pest Kenya! 🐛\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Service:* ${service}\n*Location:* ${location}\n*Details:* ${msg}\n\nPlease send me a free quote. Thank you!`;
-  window.open('https://wa.me/254720961362?text=' + encodeURIComponent(text), '_blank');
-});
+// WhatsApp form
+document.getElementById('sendBtn').onclick=()=>{
+  const n=document.getElementById('fn').value.trim();
+  const p=document.getElementById('fp').value.trim();
+  const s=document.getElementById('fs').value||'Not specified';
+  const l=document.getElementById('fl').value.trim()||'Not provided';
+  const m=document.getElementById('fm').value.trim()||'N/A';
+  if(!n||!p){alert('Please enter your name and phone number.');return;}
+  const txt=`Hi Pestokil Pest Kenya! 🐛\n\n*Name:* ${n}\n*Phone:* ${p}\n*Service:* ${s}\n*Location:* ${l}\n*Details:* ${m}\n\nPlease send me a free quote. Thank you!`;
+  window.open('https://wa.me/254720961362?text='+encodeURIComponent(txt),'_blank');
+};
 </script>
 </body>
 </html>
