@@ -119,10 +119,14 @@ ul{list-style:none}
 #backTop:hover{background:var(--red-bright);transform:translateY(-3px)!important}
 
 /* ===== MOBILE CALL BAR ===== */
-.mobile-call-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:990;background:var(--dark);border-top:1px solid rgba(255,255,255,.1);padding:10px 16px;gap:10px}
-.mobile-call-bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;padding:12px;border-radius:100px;font-weight:700;font-size:.85rem;font-family:var(--font-body)}
-.mob-call{background:var(--red-mid);color:#fff}
-.mob-wa{background:var(--wa);color:#fff}
+.mobile-call-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:995;background:var(--dark);border-top:2px solid rgba(185,28,28,.5);padding:10px 12px;gap:8px;box-shadow:0 -4px 20px rgba(0,0,0,.4)}
+.mobile-call-bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;padding:13px;border-radius:100px;font-weight:700;font-size:.88rem;font-family:var(--font-body);transition:all .2s}
+.mob-call{background:var(--red-mid);color:#fff}.mob-call:hover{background:var(--red-bright)}
+.mob-wa{background:var(--wa);color:#fff}.mob-wa:hover{background:#1fb756}
+@media(max-width:768px){
+  body{padding-bottom:70px}
+  .mobile-call-bar{display:flex}
+}
 
 /* ===== DARK MODE TOGGLE ===== */
 .dark-toggle{background:none;border:1.5px solid var(--border);border-radius:100px;padding:6px 14px;cursor:pointer;font-size:.8rem;color:var(--text);font-family:var(--font-body);display:flex;align-items:center;gap:6px;transition:all .2s}
@@ -511,47 +515,180 @@ footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0}
   .blog-grid{grid-template-columns:repeat(2,1fr)}
   .referral-inner{grid-template-columns:1fr}
   .video-inner{grid-template-columns:1fr}
+  .booking-inner{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr}
 }
+
 @media(max-width:768px){
-  .section{padding:64px 0}
-  .emergency-bar{font-size:.78rem;padding:8px 12px}
+  /* Base */
+  .section{padding:56px 0}
+  .container{padding:0 16px}
+
+  /* Top bars */
+  .emergency-bar{font-size:.76rem;padding:8px 12px;line-height:1.5}
   .topbar{display:none}
+
+  /* Navbar */
   .nav-links,.nav-cta{display:none}
   .hamburger{display:flex}
-  .hero-inner{grid-template-columns:1fr;gap:40px;padding:60px 0 100px;text-align:center}
-  .hero-desc{margin:0 auto 36px}
-  .hero-actions{justify-content:center}
-  .hero-trust{overflow-x:auto;width:100%}
+  .nav-inner{height:68px}
+  .logo-img{height:52px}
+
+  /* Hero */
+  .hero-inner{grid-template-columns:1fr;gap:32px;padding:48px 0 120px;text-align:center}
+  .hero-desc{margin:0 auto 28px;font-size:.95rem}
+  .hero-actions{justify-content:center;flex-direction:column;align-items:center;gap:10px}
+  .hero-actions .btn{width:100%;max-width:320px;justify-content:center}
+  .hero-trust{overflow-x:auto;width:100%;justify-content:flex-start}
+  .hero-eyebrow{font-size:.72rem}
+  .hero h1{font-size:clamp(2rem,8vw,3rem)}
   .hero-panel{display:none}
+
+  /* Trust bar */
+  .trust-scroll{padding:0}
+  .ti{padding:16px 20px}
+
+  /* Services */
   .svc-grid{grid-template-columns:1fr}
+  .all-svc-grid{grid-template-columns:repeat(2,1fr)}
+  .services-head{flex-direction:column;align-items:flex-start;margin-bottom:32px}
+
+  /* Before & After */
+  .ba-grid{grid-template-columns:1fr}
+  .ba-img-wrap{height:200px}
+  .ba-stats-row{gap:6px}
+  .ba-stat{padding:6px 8px}
+  .bs-num{font-size:.95rem}
+
+  /* Why */
   .why-grid{grid-template-columns:1fr}
   .why-float,.why-img-thumb{display:none}
-  .process-grid{grid-template-columns:1fr 1fr}.process-grid::before{display:none}
-  .price-grid{grid-template-columns:1fr 1fr}
+  .why-img-main{height:280px}
+  .cert-row{flex-wrap:wrap}
+
+  /* Counters */
+  .counters-grid{grid-template-columns:repeat(2,1fr)}
+  .counter-item{padding:24px 16px}
+  .c-big{font-size:2.4rem}
+
+  /* Video */
+  .video-section{padding:56px 0}
+  .video-inner{grid-template-columns:1fr;gap:32px}
+  .video-wrap iframe{height:220px}
+  .video-content h2{font-size:1.8rem}
+  .video-stats{gap:20px}
+
+  /* Process */
+  .process-grid{grid-template-columns:repeat(2,1fr);gap:20px}
+  .process-grid::before{display:none}
+  .p-circle{width:64px;height:64px;font-size:1.3rem}
+
+  /* Pricing */
+  .price-grid{grid-template-columns:repeat(2,1fr)}
+
+  /* Booking */
+  .booking-section{padding:56px 0}
+  .booking-inner{grid-template-columns:1fr;gap:32px}
+  .booking-form{padding:24px 20px}
+  .bf-row{grid-template-columns:1fr}
+
+  /* Reviews */
   .reviews-grid{grid-template-columns:1fr}
+
+  /* Certificates */
+  .certs-grid{grid-template-columns:repeat(2,1fr)}
+
+  /* Areas */
+  .areas-grid{grid-template-columns:repeat(3,1fr)}
+
+  /* Referral */
+  .referral-inner{grid-template-columns:1fr;gap:32px;text-align:center}
+  .referral-steps{align-items:center}
+  .referral-info h2{font-size:1.8rem}
+  .referral-card{padding:24px 20px}
+  .ref-amount{font-size:2.8rem}
+
+  /* Blog */
   .blog-grid{grid-template-columns:1fr}
-  .ba-grid{grid-template-columns:1fr}
+  .blog-read{width:100%;justify-content:center}
+
+  /* FAQ */
+  .faq-list{margin-top:32px}
+  .faq-q{font-size:.88rem;padding:16px 18px}
+
+  /* Map */
+  .map-wrap{height:380px}
+  .map-card{top:12px;left:12px;right:12px;max-width:none;padding:16px 18px}
+  .map-card h4{font-size:.95rem;margin-bottom:10px}
+  .map-row p,.map-row a{font-size:.78rem}
+  .map-hdr{padding:48px 0 28px}
+
+  /* Contact */
   .contact-grid{grid-template-columns:1fr}
   .f-row{grid-template-columns:1fr}
-  .footer-top{grid-template-columns:1fr}
-  .areas-grid{grid-template-columns:repeat(3,1fr)}
-  .all-svc-grid{grid-template-columns:repeat(2,1fr)}
-  .sticky-bar{flex-direction:column;text-align:center}
-  .booking-inner{grid-template-columns:1fr}
-  .bf-row{grid-template-columns:1fr}
+  .form-box,.form-card{padding:24px 20px}
+  .soc-row{gap:8px}
+  .s-btn{padding:8px 12px;font-size:.76rem}
+
+  /* Footer */
+  .footer-top{grid-template-columns:1fr;gap:32px}
+  .footer-bottom{flex-direction:column;text-align:center;gap:8px}
+  .footer-bottom a{margin-left:10px}
+
+  /* CTA */
+  .cta-btns{flex-direction:column;align-items:center}
+  .cta-btns .btn{width:100%;max-width:300px;justify-content:center}
+  .cta-inner h2{font-size:1.8rem}
+
+  /* Floating elements */
   .mobile-call-bar{display:flex}
-  #waPopup{width:290px}
-  .certs-grid{grid-template-columns:1fr 1fr}
+  .wa-float{bottom:76px;right:16px;width:52px;height:52px}
+  .wa-float svg{width:24px;height:24px}
+  #backTop{bottom:76px;left:16px;width:40px;height:40px;font-size:1rem}
+  #waPopup{width:calc(100vw - 32px);right:16px;left:16px;bottom:80px}
+  .sticky-bar{flex-direction:column;text-align:center;padding:10px 16px;gap:8px}
+  .sticky-btns{justify-content:center;width:100%}
+  .sticky-btns .btn{flex:1;justify-content:center;padding:10px 12px;font-size:.82rem}
+
+  /* Newsletter toast */
+  #nlToast{width:calc(100vw - 32px);right:16px;left:16px;top:auto;bottom:80px}
+
+  /* Booking perks */
+  .booking-perks{gap:10px}
+  .booking-perk{font-size:.85rem}
+
+  /* Section titles */
+  .section-title{font-size:clamp(1.7rem,6vw,2.4rem)}
+  .section-sub{font-size:.9rem}
+
+  /* Tag center on mobile for centered sections */
+  .tag{font-size:.7rem;padding:6px 14px}
 }
+
 @media(max-width:480px){
+  .section{padding:48px 0}
   .price-grid{grid-template-columns:1fr}
   .process-grid{grid-template-columns:1fr}
   .areas-grid{grid-template-columns:repeat(2,1fr)}
   .counters-grid{grid-template-columns:repeat(2,1fr)}
   .hero-trust{display:none}
-  .cta-btns{flex-direction:column;align-items:center}
   .certs-grid{grid-template-columns:1fr}
-  #nlToast{width:calc(100vw - 32px);right:16px}
+  .all-svc-grid{grid-template-columns:1fr}
+  .soc-row{flex-direction:column}
+  .s-btn{justify-content:center}
+  .video-wrap iframe{height:190px}
+  .ba-stats-row{gap:4px}
+  .ba-stat{padding:5px 6px}
+  .bs-num{font-size:.85rem}
+  .bs-lbl{font-size:.55rem}
+  .g-badge-row{flex-direction:column;align-items:center}
+  .referral-card{padding:20px 16px}
+  .map-wrap{height:340px}
+  .map-card{position:relative;top:auto;left:auto;right:auto;border-radius:0;box-shadow:none;border-top:2px solid var(--border)}
+  .footer-socials,.foot-soc{gap:8px}
+  .hero-actions .btn{font-size:.9rem;padding:14px 20px}
+  .emergency-bar{font-size:.72rem}
+  .booking-form{padding:20px 16px}
 }
 </style>
 </head>
