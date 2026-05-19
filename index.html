@@ -143,14 +143,11 @@ ul{list-style:none}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 
 .navbar{position:sticky;top:0;z-index:1000;background:var(--bg);border-bottom:1px solid var(--border);transition:box-shadow .3s,background .3s}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:74px}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:80px}
 .logo{display:flex;align-items:center;gap:12px}
 .logo-icon{width:46px;height:46px;background:var(--red-mid);border-radius:12px;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:900;color:#fff;font-size:1rem}
-.logo-img{height:48px;width:auto;display:block;filter:drop-shadow(0 2px 6px rgba(0,0,0,0.18))}
-.logo-name{font-family:var(--font-head);font-weight:900;font-size:1.35rem;color:var(--text);line-height:1}
-.logo-sub{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
-/* Dark-red tint on logo */
-.logo-img{filter:drop-shadow(0 2px 8px rgba(0,0,0,0.2)) sepia(0.15) hue-rotate(-8deg) saturate(1.2) brightness(0.88)}
+.logo-img{height:64px;width:auto;display:block;mix-blend-mode:multiply;filter:drop-shadow(0 2px 8px rgba(0,0,0,0.18)) sepia(0.15) hue-rotate(-8deg) saturate(1.2) brightness(0.88)}
+[data-theme="dark"] .logo-img{mix-blend-mode:screen;filter:drop-shadow(0 2px 8px rgba(0,0,0,0.4))}
 .nav-links{display:flex;gap:28px}
 .nav-links a{font-size:.9rem;font-weight:500;color:var(--text);position:relative;padding:4px 0;transition:color .2s}
 .nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--red-mid);transition:width .25s;border-radius:2px}
@@ -566,7 +563,7 @@ footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0}
     <span class="pre-pest">🐛</span><span class="pre-pest">🐀</span><span class="pre-pest">🦟</span><span class="pre-pest">🪲</span>
   </div>
   <div class="pre-logo">
-    <img src="15947.jpg" alt="Pestokil Logo" style="height:90px;width:auto;filter:drop-shadow(0 0 30px rgba(185,28,28,0.7)) sepia(0.2) hue-rotate(-8deg) saturate(1.2) brightness(0.85);animation:iconGlow 2s ease-in-out infinite">
+    <img src="15947.jpg" alt="Pestokil Logo" style="height:120px;width:auto;mix-blend-mode:multiply;filter:drop-shadow(0 0 30px rgba(185,28,28,0.7)) sepia(0.2) hue-rotate(-8deg) saturate(1.2) brightness(0.85)">
   </div>
   <div class="pre-tagline" id="preTag">Kenya's #1 Certified Pest Control</div>
   <div class="pre-bar-wrap"><div class="pre-bar" id="preBar"></div></div>
@@ -650,7 +647,7 @@ footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0}
 <nav class="navbar" id="navbar">
   <div class="container">
     <div class="nav-inner">
-      <a href="#home" class="logo">
+      <a href="#home" class="logo" style="background:white;border-radius:50%;padding:2px;display:inline-flex;align-items:center;justify-content:center">
         <img src="15947.jpg" alt="Pestokil Kenya Logo" class="logo-img">
       </a>
       <ul class="nav-links">
@@ -1270,7 +1267,7 @@ footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0}
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="#home" class="logo" style="display:inline-flex"><img src="15947.jpg" alt="Pestokil Logo" style="height:56px;width:auto;filter:drop-shadow(0 2px 8px rgba(0,0,0,0.4)) brightness(0.88)"></a>
+        <a href="#home" class="logo" style="display:inline-flex"><img src="15947.jpg" alt="Pestokil Logo" style="height:72px;width:auto;mix-blend-mode:screen;filter:drop-shadow(0 2px 10px rgba(0,0,0,0.5)) brightness(1.1)"></a>
         <p>Your trusted partner in pest control across Kenya. Safe, effective and affordable solutions for your home and business since 2017. PCO Certified. Fully Insured.</p>
         <div class="foot-soc">
           <a href="https://www.facebook.com/share/1NqegrvrUu/" target="_blank" title="Facebook">f</a>
