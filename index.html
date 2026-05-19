@@ -10,7 +10,7 @@
 <meta property="og:description" content="Kenya's most trusted pest control company. Fast, safe, certified. Free inspection. Call +254 720 961 362.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://jacksonlumumba2026-web.github.io/Pesto-kill/11733.jpg">
-<meta name="theme-color" content="#B91C1C">
+<meta name="theme-color" content="#E00000">
 
 <!-- PWA Manifest -->
 <link rel="manifest" href="manifest.json">
@@ -31,7 +31,7 @@ html{scroll-behavior:smooth}
 
 /* ===== CSS VARIABLES – LIGHT & DARK ===== */
 :root{
-  --red:#9B1C1C;--red-mid:#B91C1C;--red-bright:#DC2626;--red-light:#EF4444;
+  --red:#CC0000;--red-mid:#E00000;--red-bright:#FF1A1A;--red-light:#FF4444;
   --gold:#C9A84C;--gold-light:#E8C97A;
   --black:#0A0A0A;--dark:#111111;--dark2:#1A1A1A;
   --bg:#FFFFFF;--bg-alt:#FAF7F2;--bg-card:#FFFFFF;
@@ -40,7 +40,7 @@ html{scroll-behavior:smooth}
   --font-head:'Playfair Display',serif;--font-body:'Outfit',sans-serif;
   --radius:14px;--radius-sm:8px;
   --shadow:0 4px 32px rgba(0,0,0,0.10);
-  --shadow-red:0 8px 40px rgba(155,28,28,0.3);
+  --shadow-red:0 8px 40px rgba(224,0,0,0.3);
   --shadow-lg:0 16px 64px rgba(0,0,0,0.16);
 }
 [data-theme="dark"]{
@@ -57,7 +57,7 @@ ul{list-style:none}
 .container{max-width:1200px;margin:0 auto;padding:0 24px}
 .section{padding:100px 0}
 .section-alt{background:var(--bg-alt)}
-.tag{display:inline-flex;align-items:center;gap:8px;background:rgba(185,28,28,0.1);color:var(--red-mid);font-size:0.74rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;padding:7px 18px;border-radius:100px;border:1px solid rgba(185,28,28,0.2);margin-bottom:16px}
+.tag{display:inline-flex;align-items:center;gap:8px;background:rgba(224,0,0,0.1);color:var(--red-mid);font-size:0.74rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;padding:7px 18px;border-radius:100px;border:1px solid rgba(224,0,0,0.2);margin-bottom:16px}
 .tag-dot{width:5px;height:5px;background:var(--red-bright);border-radius:50%;flex-shrink:0}
 .section-title{font-family:var(--font-head);font-size:clamp(2rem,4vw,3.2rem);font-weight:900;color:var(--text);line-height:1.08;margin-bottom:16px}
 .section-title span{color:var(--red-mid)}
@@ -79,7 +79,7 @@ ul{list-style:none}
 .pre-logo{display:flex;align-items:center;gap:14px;animation:popIn .8s cubic-bezier(.34,1.56,.64,1) both}
 @keyframes popIn{from{opacity:0;transform:scale(.5)}to{opacity:1;transform:scale(1)}}
 .pre-logo-icon{width:72px;height:72px;background:var(--red-mid);border-radius:18px;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:900;color:#fff;font-size:1.6rem;animation:iconGlow 2s ease-in-out infinite}
-@keyframes iconGlow{0%,100%{box-shadow:0 0 40px rgba(185,28,28,.5)}50%{box-shadow:0 0 80px rgba(185,28,28,.9)}}
+@keyframes iconGlow{0%,100%{box-shadow:0 0 40px rgba(224,0,0,.5)}50%{box-shadow:0 0 80px rgba(224,0,0,.9)}}
 .pre-name{font-family:var(--font-head);font-weight:900;font-size:2.4rem;color:#fff;line-height:1}
 .pre-sub-text{font-size:.68rem;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.18em;margin-top:4px}
 .pre-tagline{font-family:var(--font-head);font-size:1.1rem;color:rgba(255,255,255,.4);font-style:italic;text-align:center;min-height:1.6em;transition:opacity .3s;padding:0 24px}
@@ -88,7 +88,7 @@ ul{list-style:none}
 .pre-pct{font-size:.8rem;color:rgba(255,255,255,.28)}
 
 /* ===== COOKIE ===== */
-#cookieBanner{position:fixed;bottom:0;left:0;right:0;z-index:8000;background:#1A1A1A;border-top:2px solid rgba(185,28,28,.4);padding:18px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;transform:translateY(110%);transition:transform .55s cubic-bezier(.34,1.1,.64,1);box-shadow:0 -8px 40px rgba(0,0,0,.5)}
+#cookieBanner{position:fixed;bottom:0;left:0;right:0;z-index:8000;background:#1A1A1A;border-top:2px solid rgba(224,0,0,.4);padding:18px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;transform:translateY(110%);transition:transform .55s cubic-bezier(.34,1.1,.64,1);box-shadow:0 -8px 40px rgba(0,0,0,.5)}
 #cookieBanner.show{transform:translateY(0)}
 .ck-text{display:flex;gap:14px;flex:1;min-width:240px;align-items:flex-start}
 .ck-icon{font-size:1.7rem;flex-shrink:0}
@@ -119,7 +119,7 @@ ul{list-style:none}
 #backTop:hover{background:var(--red-bright);transform:translateY(-3px)!important}
 
 /* ===== MOBILE CALL BAR ===== */
-.mobile-call-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:995;background:var(--dark);border-top:2px solid rgba(185,28,28,.5);padding:10px 12px;gap:8px;box-shadow:0 -4px 20px rgba(0,0,0,.4)}
+.mobile-call-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:995;background:var(--dark);border-top:2px solid rgba(224,0,0,.5);padding:10px 12px;gap:8px;box-shadow:0 -4px 20px rgba(0,0,0,.4)}
 .mobile-call-bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;padding:13px;border-radius:100px;font-weight:700;font-size:.88rem;font-family:var(--font-body);transition:all .2s}
 .mob-call{background:var(--red-mid);color:#fff}.mob-call:hover{background:var(--red-bright)}
 .mob-wa{background:var(--wa);color:#fff}.mob-wa:hover{background:#1fb756}
@@ -170,13 +170,13 @@ ul{list-style:none}
 /* ===== HERO ===== */
 .hero{position:relative;overflow:hidden;min-height:92vh;display:flex;align-items:center;background:var(--black)}
 .hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1600&q=80');background-size:cover;background-position:center;opacity:.2}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,10,10,.97) 0%,rgba(155,28,28,.5) 50%,rgba(10,10,10,.92) 100%)}
-.hero-pattern{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239B1C1C' fill-opacity='0.05'%3E%3Cpath d='M0 0h40v40H0zm40 40h40v40H40z'/%3E%3C/g%3E%3C/svg%3E")}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,10,10,.97) 0%,rgba(224,0,0,.5) 50%,rgba(10,10,10,.92) 100%)}
+.hero-pattern{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23CC0000' fill-opacity='0.05'%3E%3Cpath d='M0 0h40v40H0zm40 40h40v40H40z'/%3E%3C/g%3E%3C/svg%3E")}
 /* Animated crawling pest SVG */
 .hero-pest-svg{position:absolute;bottom:60px;right:0;width:180px;opacity:.12;animation:crawl 18s linear infinite}
 @keyframes crawl{0%{right:-200px;bottom:40px}50%{right:calc(100% + 200px);bottom:80px}100%{right:-200px;bottom:40px}}
 .hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center;padding:80px 0 60px}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;background:rgba(155,28,28,.2);border:1px solid rgba(155,28,28,.4);color:var(--gold-light);font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:8px 18px;border-radius:100px;margin-bottom:28px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;background:rgba(224,0,0,.2);border:1px solid rgba(224,0,0,.4);color:var(--gold-light);font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:8px 18px;border-radius:100px;margin-bottom:28px}
 .hero-eyebrow-pulse{width:6px;height:6px;background:var(--red-light);border-radius:50%;animation:pulse 2s infinite}
 .hero h1{font-family:var(--font-head);font-size:clamp(2.6rem,5.5vw,4.4rem);font-weight:900;color:#fff;line-height:1.03;margin-bottom:24px}
 .hero h1 .accent{color:var(--gold-light);font-style:italic}.hero h1 .ra{color:var(--red-light)}
@@ -190,7 +190,7 @@ ul{list-style:none}
 .hero-panel{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);backdrop-filter:blur(20px);border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:14px}
 .hero-panel-title{font-family:var(--font-head);font-size:1.2rem;font-weight:700;color:#fff;margin-bottom:6px}
 .hero-panel-sub{font-size:.85rem;color:rgba(255,255,255,.45);margin-bottom:2px}
-.pf{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-sm);padding:13px 16px;color:#fff;font-family:var(--font-body);font-size:.9rem;width:100%;outline:none;transition:border-color .2s}.pf::placeholder{color:rgba(255,255,255,.3)}.pf:focus{border-color:rgba(185,28,28,.6)}.pf option{background:var(--dark2);color:#fff}
+.pf{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-sm);padding:13px 16px;color:#fff;font-family:var(--font-body);font-size:.9rem;width:100%;outline:none;transition:border-color .2s}.pf::placeholder{color:rgba(255,255,255,.3)}.pf:focus{border-color:rgba(224,0,0,.6)}.pf option{background:var(--dark2);color:#fff}
 .panel-wa-btn{width:100%;padding:15px;border-radius:100px;background:var(--wa);color:#fff;border:none;font-family:var(--font-body);font-size:1rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:all .2s;margin-top:4px}.panel-wa-btn:hover{background:#1fb756;transform:translateY(-2px)}
 .panel-note{text-align:center;font-size:.78rem;color:rgba(255,255,255,.3)}
 
@@ -198,7 +198,7 @@ ul{list-style:none}
 .trust-bar{background:var(--dark);border-bottom:1px solid rgba(255,255,255,.06)}
 .trust-scroll{display:flex;overflow-x:auto;scrollbar-width:none}.trust-scroll::-webkit-scrollbar{display:none}
 .ti{display:flex;align-items:center;gap:14px;padding:22px 32px;border-right:1px solid rgba(255,255,255,.06);white-space:nowrap;flex-shrink:0}
-.ti-icon{width:38px;height:38px;background:rgba(185,28,28,.15);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.ti-icon{width:38px;height:38px;background:rgba(224,0,0,.15);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
 .ti-label strong{display:block;font-size:.87rem;font-weight:600;color:#fff;margin-bottom:2px}
 .ti-label span{font-size:.74rem;color:rgba(255,255,255,.4)}
 
@@ -217,10 +217,10 @@ ul{list-style:none}
 .svc-body p{font-size:.87rem;color:var(--muted);line-height:1.65;margin-bottom:16px}
 .svc-footer{display:flex;align-items:center;justify-content:space-between}
 .svc-link{font-size:.85rem;font-weight:600;color:var(--red-mid);display:flex;align-items:center;gap:6px}
-.svc-arr{width:28px;height:28px;border-radius:50%;background:rgba(185,28,28,.08);display:flex;align-items:center;justify-content:center;transition:all .2s}.svc-card:hover .svc-arr{background:var(--red-mid);color:#fff}
+.svc-arr{width:28px;height:28px;border-radius:50%;background:rgba(224,0,0,.08);display:flex;align-items:center;justify-content:center;transition:all .2s}.svc-card:hover .svc-arr{background:var(--red-mid);color:#fff}
 .all-svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:48px}
 .svc-pill{background:var(--bg-card);border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:13px 16px;display:flex;align-items:center;gap:10px;font-size:.84rem;font-weight:500;color:var(--text);transition:all .2s;cursor:default}
-.svc-pill:hover{border-color:var(--red-light);background:rgba(185,28,28,.03);transform:translateY(-2px)}
+.svc-pill:hover{border-color:var(--red-light);background:rgba(224,0,0,.03);transform:translateY(-2px)}
 .svc-dot{width:5px;height:5px;background:var(--red-mid);border-radius:50%;flex-shrink:0}
 
 /* ===== BEFORE & AFTER - RESULT CARDS ===== */
@@ -261,8 +261,8 @@ ul{list-style:none}
 .cert-badge{background:var(--bg-alt);border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:9px 14px;display:flex;align-items:center;gap:7px;font-size:.78rem;font-weight:600;color:var(--text)}
 .why-feats{display:grid;gap:18px;margin-top:32px}
 .why-feat{display:flex;gap:16px;padding:18px;border-radius:var(--radius);border:1.5px solid transparent;transition:all .25s;cursor:default}
-.why-feat:hover{border-color:rgba(185,28,28,.15);background:rgba(185,28,28,.03)}
-.why-feat-icon{width:50px;height:50px;background:rgba(185,28,28,.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+.why-feat:hover{border-color:rgba(224,0,0,.15);background:rgba(224,0,0,.03)}
+.why-feat-icon{width:50px;height:50px;background:rgba(224,0,0,.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
 .why-feat h4{font-family:var(--font-head);font-weight:700;font-size:1rem;color:var(--text);margin-bottom:5px}
 .why-feat p{font-size:.87rem;color:var(--muted);line-height:1.6}
 
@@ -281,7 +281,7 @@ ul{list-style:none}
 .video-wrap iframe{width:100%;height:320px;display:block;border:none}
 .video-play-overlay{position:absolute;inset:0;background:rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .3s}
 .video-play-overlay:hover{background:rgba(0,0,0,.2)}
-.play-btn{width:72px;height:72px;border-radius:50%;background:var(--red-mid);display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:0 0 40px rgba(185,28,28,.6);transition:transform .2s}.video-play-overlay:hover .play-btn{transform:scale(1.1)}
+.play-btn{width:72px;height:72px;border-radius:50%;background:var(--red-mid);display:flex;align-items:center;justify-content:center;font-size:1.6rem;box-shadow:0 0 40px rgba(224,0,0,.6);transition:transform .2s}.video-play-overlay:hover .play-btn{transform:scale(1.1)}
 .video-content h2{font-family:var(--font-head);font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:900;color:#fff;line-height:1.1;margin-bottom:16px}
 .video-content p{color:rgba(255,255,255,.55);font-size:1rem;line-height:1.75;margin-bottom:28px}
 .video-stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:28px}
@@ -316,7 +316,7 @@ ul{list-style:none}
 .pop .p-feats li{color:rgba(255,255,255,.65)}
 .p-feats li::before{content:'✓';color:var(--red-mid);font-weight:700;flex-shrink:0}
 .pop .p-feats li::before{color:var(--gold)}
-.p-btn{display:block;padding:11px;border-radius:100px;font-size:.84rem;font-weight:600;transition:all .2s;background:rgba(185,28,28,.07);color:var(--red-mid)}
+.p-btn{display:block;padding:11px;border-radius:100px;font-size:.84rem;font-weight:600;transition:all .2s;background:rgba(224,0,0,.07);color:var(--red-mid)}
 .pop .p-btn{background:var(--red-mid);color:#fff}
 .p-btn:hover{background:var(--red-mid);color:#fff}
 .pop .p-btn:hover{background:var(--red-bright)}
@@ -328,19 +328,19 @@ ul{list-style:none}
 .booking-info p{color:rgba(255,255,255,.55);line-height:1.75;margin-bottom:28px}
 .booking-perks{display:flex;flex-direction:column;gap:12px}
 .booking-perk{display:flex;align-items:center;gap:12px;font-size:.9rem;color:rgba(255,255,255,.7)}
-.booking-perk span:first-child{width:32px;height:32px;background:rgba(185,28,28,.25);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem}
+.booking-perk span:first-child{width:32px;height:32px;background:rgba(224,0,0,.25);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem}
 .booking-form{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:36px}
 .booking-form h3{font-family:var(--font-head);font-weight:700;font-size:1.3rem;color:#fff;margin-bottom:24px}
 .bf-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .bf-group{margin-bottom:14px}
 .bf-group label{display:block;font-size:.82rem;font-weight:600;color:rgba(255,255,255,.6);margin-bottom:6px}
-.bf-input{width:100%;padding:12px 16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-sm);font-family:var(--font-body);font-size:.9rem;color:#fff;outline:none;transition:border-color .2s}.bf-input::placeholder{color:rgba(255,255,255,.25)}.bf-input:focus{border-color:rgba(185,28,28,.6)}.bf-input option{background:var(--dark2);color:#fff}
+.bf-input{width:100%;padding:12px 16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius-sm);font-family:var(--font-body);font-size:.9rem;color:#fff;outline:none;transition:border-color .2s}.bf-input::placeholder{color:rgba(255,255,255,.25)}.bf-input:focus{border-color:rgba(224,0,0,.6)}.bf-input option{background:var(--dark2);color:#fff}
 .bf-submit{width:100%;padding:15px;border-radius:100px;background:var(--wa);color:#fff;border:none;font-family:var(--font-body);font-size:1rem;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:all .2s}.bf-submit:hover{background:#1fb756;transform:translateY(-2px)}
 
 /* ===== GOOGLE REVIEWS ===== */
 .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
 .review-card{background:var(--bg-card);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);border:1.5px solid var(--border);transition:all .3s}
-.review-card:hover{border-color:rgba(185,28,28,.2);transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.review-card:hover{border-color:rgba(224,0,0,.2);transform:translateY(-4px);box-shadow:var(--shadow-lg)}
 .review-header{display:flex;align-items:center;gap:12px;margin-bottom:16px}
 .review-av{width:44px;height:44px;border-radius:50%;background:var(--red-mid);display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:700;color:#fff;font-size:.95rem;flex-shrink:0}
 .review-name{font-weight:700;font-size:.9rem;color:var(--text)}
@@ -365,7 +365,7 @@ ul{list-style:none}
 .blog-meta::before{content:'📅'}
 .blog-body h3{font-family:var(--font-head);font-weight:700;font-size:1.05rem;color:var(--text);margin-bottom:10px;line-height:1.35}
 .blog-body p{font-size:.85rem;color:var(--muted);line-height:1.65;margin-bottom:16px}
-.blog-read{font-size:.82rem;font-weight:700;color:var(--red-mid);display:inline-flex;align-items:center;gap:6px;background:rgba(185,28,28,.07);padding:9px 16px;border-radius:100px;transition:all .2s;text-decoration:none}
+.blog-read{font-size:.82rem;font-weight:700;color:var(--red-mid);display:inline-flex;align-items:center;gap:6px;background:rgba(224,0,0,.07);padding:9px 16px;border-radius:100px;transition:all .2s;text-decoration:none}
 .blog-read:hover{background:var(--red-mid);color:#fff;transform:translateY(-1px)}
 
 /* ===== REFERRAL ===== */
@@ -403,9 +403,9 @@ ul{list-style:none}
 /* ===== FAQ ===== */
 .faq-list{display:flex;flex-direction:column;gap:12px;margin-top:56px;max-width:800px;margin-left:auto;margin-right:auto}
 .faq-item{background:var(--bg-card);border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:border-color .2s}
-.faq-item.open{border-color:rgba(185,28,28,.3)}
+.faq-item.open{border-color:rgba(224,0,0,.3)}
 .faq-q{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;cursor:pointer;font-weight:600;font-size:.95rem;color:var(--text);gap:16px}.faq-q:hover{color:var(--red-mid)}
-.faq-ico{width:28px;height:28px;border-radius:50%;background:rgba(185,28,28,.08);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .3s;color:var(--red-mid);font-size:1.1rem}
+.faq-ico{width:28px;height:28px;border-radius:50%;background:rgba(224,0,0,.08);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .3s;color:var(--red-mid);font-size:1.1rem}
 .faq-item.open .faq-ico{background:var(--red-mid);color:#fff;transform:rotate(45deg)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s}
 .faq-item.open .faq-a{max-height:220px;padding:0 24px 20px}
@@ -429,7 +429,7 @@ ul{list-style:none}
 .contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:64px}
 .contact-info h3{font-family:var(--font-head);font-weight:700;font-size:1.4rem;color:var(--text);margin-bottom:28px}
 .c-item{display:flex;gap:16px;margin-bottom:22px}
-.c-icon{width:48px;height:48px;background:rgba(185,28,28,.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.c-icon{width:48px;height:48px;background:rgba(224,0,0,.08);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
 .c-item strong{display:block;font-weight:600;color:var(--text);margin-bottom:3px;font-size:.9rem}
 .c-item span,.c-item a{font-size:.88rem;color:var(--muted)}
 .c-item a{color:var(--red-mid);font-weight:500}
@@ -452,7 +452,7 @@ select.f-input{appearance:none;background-image:url("data:image/svg+xml,%3Csvg w
 
 /* ===== CTA BAND ===== */
 .cta-band{background:var(--dark);padding:96px 0;position:relative;overflow:hidden}
-.cta-band::before{content:'';position:absolute;right:-100px;top:-100px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(185,28,28,.2) 0%,transparent 70%)}
+.cta-band::before{content:'';position:absolute;right:-100px;top:-100px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(224,0,0,.2) 0%,transparent 70%)}
 .cta-band::after{content:'';position:absolute;left:-60px;bottom:-60px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,.08) 0%,transparent 70%)}
 .cta-inner{position:relative;z-index:1;text-align:center;max-width:700px;margin:0 auto}
 .cta-inner h2{font-family:var(--font-head);font-size:clamp(2rem,4vw,3rem);font-weight:900;color:#fff;margin-bottom:16px;line-height:1.1}
@@ -700,7 +700,7 @@ footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0}
     <span class="pre-pest">🐛</span><span class="pre-pest">🐀</span><span class="pre-pest">🦟</span><span class="pre-pest">🪲</span>
   </div>
   <div class="pre-logo">
-    <img src="15947.jpg" alt="Pestokil Logo" style="height:120px;width:auto;mix-blend-mode:multiply;filter:drop-shadow(0 0 30px rgba(185,28,28,0.7)) sepia(0.2) hue-rotate(-8deg) saturate(1.2) brightness(0.85)">
+    <img src="15947.jpg" alt="Pestokil Logo" style="height:120px;width:auto;mix-blend-mode:multiply;filter:drop-shadow(0 0 30px rgba(224,0,0,0.7)) sepia(0.2) hue-rotate(-8deg) saturate(1.2) brightness(0.85)">
   </div>
   <div class="pre-tagline" id="preTag">Kenya's #1 Certified Pest Control</div>
   <div class="pre-bar-wrap"><div class="pre-bar" id="preBar"></div></div>
@@ -829,17 +829,17 @@ footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0}
   <div class="hero-pattern"></div>
   <!-- Animated crawling pest -->
   <svg class="hero-pest-svg" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <ellipse cx="100" cy="60" rx="40" ry="22" fill="#B91C1C" opacity=".8"/>
+    <ellipse cx="100" cy="60" rx="40" ry="22" fill="#E00000" opacity=".8"/>
     <ellipse cx="100" cy="60" rx="28" ry="16" fill="#7F1D1D" opacity=".6"/>
-    <circle cx="100" cy="44" r="14" fill="#B91C1C" opacity=".9"/>
-    <line x1="60" y1="50" x2="20" y2="35" stroke="#B91C1C" stroke-width="3" opacity=".7"/>
-    <line x1="60" y1="60" x2="15" y2="60" stroke="#B91C1C" stroke-width="3" opacity=".7"/>
-    <line x1="60" y1="70" x2="20" y2="85" stroke="#B91C1C" stroke-width="3" opacity=".7"/>
-    <line x1="140" y1="50" x2="180" y2="35" stroke="#B91C1C" stroke-width="3" opacity=".7"/>
-    <line x1="140" y1="60" x2="185" y2="60" stroke="#B91C1C" stroke-width="3" opacity=".7"/>
-    <line x1="140" y1="70" x2="180" y2="85" stroke="#B91C1C" stroke-width="3" opacity=".7"/>
-    <line x1="95" y1="30" x2="80" y2="5" stroke="#B91C1C" stroke-width="2" opacity=".6"/>
-    <line x1="105" y1="30" x2="120" y2="5" stroke="#B91C1C" stroke-width="2" opacity=".6"/>
+    <circle cx="100" cy="44" r="14" fill="#E00000" opacity=".9"/>
+    <line x1="60" y1="50" x2="20" y2="35" stroke="#E00000" stroke-width="3" opacity=".7"/>
+    <line x1="60" y1="60" x2="15" y2="60" stroke="#E00000" stroke-width="3" opacity=".7"/>
+    <line x1="60" y1="70" x2="20" y2="85" stroke="#E00000" stroke-width="3" opacity=".7"/>
+    <line x1="140" y1="50" x2="180" y2="35" stroke="#E00000" stroke-width="3" opacity=".7"/>
+    <line x1="140" y1="60" x2="185" y2="60" stroke="#E00000" stroke-width="3" opacity=".7"/>
+    <line x1="140" y1="70" x2="180" y2="85" stroke="#E00000" stroke-width="3" opacity=".7"/>
+    <line x1="95" y1="30" x2="80" y2="5" stroke="#E00000" stroke-width="2" opacity=".6"/>
+    <line x1="105" y1="30" x2="120" y2="5" stroke="#E00000" stroke-width="2" opacity=".6"/>
   </svg>
   <div class="container">
     <div class="hero-inner">
@@ -952,7 +952,7 @@ footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0}
           <div class="ba-stats-row">
             <div class="ba-stat"><div class="bs-num">3hrs</div><div class="bs-lbl">Treatment</div></div>
             <div class="ba-stat"><div class="bs-num">100%</div><div class="bs-lbl">Cleared</div></div>
-            <div class="ba-stat"><div class="bs-num">6mo</div><div class="bs-lbl">Warranty</div></div>
+            <div class="ba-stat"><div class="bs-num">30days</div><div class="bs-lbl">Warranty</div></div>
           </div>
         </div>
         <div class="ba-body">
@@ -961,7 +961,7 @@ footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0}
             <div class="ba-tl-item"><div class="ba-tl-dot bad"></div><span><strong>Before:</strong> Severe bedbug infestation across 3-bedroom apartment. Client had sleepless nights for 2 weeks.</span></div>
             <div class="ba-tl-item"><div class="ba-tl-dot good"></div><span><strong>After:</strong> Full heat + chemical treatment. Zero bedbug activity confirmed on follow-up visit.</span></div>
           </div>
-          <div class="ba-outcome">✅ Pest-free confirmed · 6-month warranty issued</div>
+          <div class="ba-outcome">✅ Pest-free confirmed · 30-day warranty issued</div>
         </div>
       </div>
 
@@ -974,16 +974,16 @@ footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0}
           <div class="ba-stats-row">
             <div class="ba-stat"><div class="bs-num">1day</div><div class="bs-lbl">Response</div></div>
             <div class="ba-stat"><div class="bs-num">100%</div><div class="bs-lbl">Cleared</div></div>
-            <div class="ba-stat"><div class="bs-num">12mo</div><div class="bs-lbl">Warranty</div></div>
+            <div class="ba-stat"><div class="bs-num">30days</div><div class="bs-lbl">Warranty</div></div>
           </div>
         </div>
         <div class="ba-body">
           <h4>Rodent Removal — Karen</h4>
           <div class="ba-timeline">
             <div class="ba-tl-item"><div class="ba-tl-dot bad"></div><span><strong>Before:</strong> Rat infestation in kitchen and ceiling. Food contamination risk for family of 5.</span></div>
-            <div class="ba-tl-item"><div class="ba-tl-dot good"></div><span><strong>After:</strong> Full exclusion, baiting and trapping. No rodent activity in 6-month follow-up.</span></div>
+            <div class="ba-tl-item"><div class="ba-tl-dot good"></div><span><strong>After:</strong> Full exclusion, baiting and trapping. No rodent activity in 30-day follow-up.</span></div>
           </div>
-          <div class="ba-outcome">✅ Rodent-free confirmed · 12-month protection plan</div>
+          <div class="ba-outcome">✅ Rodent-free confirmed · 30-day protection plan</div>
         </div>
       </div>
 
@@ -996,16 +996,16 @@ footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0}
           <div class="ba-stats-row">
             <div class="ba-stat"><div class="bs-num">2days</div><div class="bs-lbl">Treatment</div></div>
             <div class="ba-stat"><div class="bs-num">100%</div><div class="bs-lbl">Cleared</div></div>
-            <div class="ba-stat"><div class="bs-num">12mo</div><div class="bs-lbl">Warranty</div></div>
+            <div class="ba-stat"><div class="bs-num">30days</div><div class="bs-lbl">Warranty</div></div>
           </div>
         </div>
         <div class="ba-body">
           <h4>Termite Control — Kilimani</h4>
           <div class="ba-timeline">
             <div class="ba-tl-item"><div class="ba-tl-dot bad"></div><span><strong>Before:</strong> Active termite colony found in floor boards and window frames. Structural damage beginning.</span></div>
-            <div class="ba-tl-item"><div class="ba-tl-dot good"></div><span><strong>After:</strong> Soil treatment + baiting system installed. Structure fully protected, no activity in 12 months.</span></div>
+            <div class="ba-tl-item"><div class="ba-tl-dot good"></div><span><strong>After:</strong> Soil treatment + baiting system installed. Structure fully protected, no activity after 30 days follow-up.</span></div>
           </div>
-          <div class="ba-outcome">✅ Structure protected · 12-month warranty issued</div>
+          <div class="ba-outcome">✅ Structure protected · 30-day warranty issued</div>
         </div>
       </div>
     </div>
@@ -1034,7 +1034,7 @@ footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0}
           <div class="why-feat animate-on-scroll"><div class="why-feat-icon">🌿</div><div><h4>Eco-Safe & Family-Friendly</h4><p>WHO-approved, eco-responsible products safe for children, pets and the environment. No harmful residue after treatment.</p></div></div>
           <div class="why-feat animate-on-scroll"><div class="why-feat-icon">👷</div><div><h4>Government Certified Technicians</h4><p>PCO government certification held by all our technicians. Continuous training on the latest pest control methods.</p></div></div>
           <div class="why-feat animate-on-scroll"><div class="why-feat-icon">⚡</div><div><h4>Fast Emergency Response</h4><p>Same-day service for urgent infestations. Available Mon–Sat, 7am–7pm across all Nairobi zones.</p></div></div>
-          <div class="why-feat animate-on-scroll"><div class="why-feat-icon">💯</div><div><h4>100% Satisfaction Guarantee</h4><p>If pests return within the warranty period, we come back free of charge. Your peace of mind is our priority.</p></div></div>
+          <div class="why-feat animate-on-scroll"><div class="why-feat-icon">💯</div><div><h4>100% Satisfaction Guarantee</h4><p>If pests return within 30 days, we come back free of charge. Your peace of mind is our priority.</p></div></div>
         </div>
       </div>
     </div>
@@ -1059,7 +1059,7 @@ footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0}
         <iframe src="https://www.youtube.com/embed/qukEqsEGnww?rel=0&modestbranding=1&autoplay=0" title="Professional Pest Control & Fumigation Services in Nairobi Kenya" allowfullscreen loading="lazy"></iframe>
       </div>
       <div class="video-content">
-        <div class="tag" style="border-color:rgba(185,28,28,.4)"><span class="tag-dot"></span>Watch Us Work</div>
+        <div class="tag" style="border-color:rgba(224,0,0,.4)"><span class="tag-dot"></span>Watch Us Work</div>
         <h2>See Our Experts<br><span>in Action</span></h2>
         <p style="color:rgba(255,255,255,.55)">Watch our certified technicians eliminate pests safely and effectively. From fumigation to termite treatment — see the Pestokil difference.</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap">
@@ -1094,7 +1094,7 @@ footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0}
   <div class="container">
     <div class="booking-inner">
       <div class="booking-info">
-        <div class="tag" style="border-color:rgba(185,28,28,.4)"><span class="tag-dot"></span>Book Appointment</div>
+        <div class="tag" style="border-color:rgba(224,0,0,.4)"><span class="tag-dot"></span>Book Appointment</div>
         <h2>Schedule Your <span style="color:var(--gold-light)">Free Inspection</span></h2>
         <p>Pick your preferred date and time. Our certified technician will arrive on schedule — no waiting, no hassle.</p>
         <div class="booking-perks">
@@ -1236,7 +1236,7 @@ footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0}
     <div class="faq-list">
       <div class="faq-item"><div class="faq-q">How long does a fumigation take?<div class="faq-ico">+</div></div><div class="faq-a"><p>A standard fumigation takes 2–4 hours depending on property size and pest type. We recommend staying out for 3–4 hours after treatment. We'll advise you clearly before we begin.</p></div></div>
       <div class="faq-item"><div class="faq-q">Are your chemicals safe for children and pets?<div class="faq-ico">+</div></div><div class="faq-a"><p>Yes. We use WHO-approved, eco-friendly products safe for your family and pets once dried — typically within 2–3 hours. Our technician will guide you on re-entry timing.</p></div></div>
-      <div class="faq-item"><div class="faq-q">Do you offer a warranty on your services?<div class="faq-ico">+</div></div><div class="faq-a"><p>All services come with a satisfaction guarantee. If pests return within the warranty period, we treat your property again at absolutely no extra cost.</p></div></div>
+      <div class="faq-item"><div class="faq-q">Do you offer a warranty on your services?<div class="faq-ico">+</div></div><div class="faq-a"><p>All services come with a satisfaction guarantee. If pests return within 30 days, we treat your property again at absolutely no extra cost.</p></div></div>
       <div class="faq-item"><div class="faq-q">How quickly can you respond to an emergency?<div class="faq-ico">+</div></div><div class="faq-a"><p>We offer same-day emergency service for urgent infestations. Simply WhatsApp or call +254 720 961 362 and we'll dispatch a technician as fast as possible.</p></div></div>
       <div class="faq-item"><div class="faq-q">Do you serve commercial properties?<div class="faq-ico">+</div></div><div class="faq-a"><p>Yes — restaurants, hotels, warehouses, offices, schools and more. We provide full documentation and compliance reports suitable for health audits and inspections.</p></div></div>
       <div class="faq-item"><div class="faq-q">How does the referral program work?<div class="faq-ico">+</div></div><div class="faq-a"><p>Refer a friend or neighbour to Pestokil. When they book and mention your name, both of you get KSh 500 off your next treatment. No limits on referrals!</p></div></div>
