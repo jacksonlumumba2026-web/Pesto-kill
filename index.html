@@ -146,8 +146,11 @@ ul{list-style:none}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:74px}
 .logo{display:flex;align-items:center;gap:12px}
 .logo-icon{width:46px;height:46px;background:var(--red-mid);border-radius:12px;display:flex;align-items:center;justify-content:center;font-family:var(--font-head);font-weight:900;color:#fff;font-size:1rem}
+.logo-img{height:48px;width:auto;display:block;filter:drop-shadow(0 2px 6px rgba(0,0,0,0.18))}
 .logo-name{font-family:var(--font-head);font-weight:900;font-size:1.35rem;color:var(--text);line-height:1}
 .logo-sub{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+/* Dark-red tint on logo */
+.logo-img{filter:drop-shadow(0 2px 8px rgba(0,0,0,0.2)) sepia(0.15) hue-rotate(-8deg) saturate(1.2) brightness(0.88)}
 .nav-links{display:flex;gap:28px}
 .nav-links a{font-size:.9rem;font-weight:500;color:var(--text);position:relative;padding:4px 0;transition:color .2s}
 .nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--red-mid);transition:width .25s;border-radius:2px}
@@ -361,7 +364,8 @@ ul{list-style:none}
 .blog-meta::before{content:'📅'}
 .blog-body h3{font-family:var(--font-head);font-weight:700;font-size:1.05rem;color:var(--text);margin-bottom:10px;line-height:1.35}
 .blog-body p{font-size:.85rem;color:var(--muted);line-height:1.65;margin-bottom:16px}
-.blog-read{font-size:.84rem;font-weight:700;color:var(--red-mid);display:flex;align-items:center;gap:6px}
+.blog-read{font-size:.82rem;font-weight:700;color:var(--red-mid);display:inline-flex;align-items:center;gap:6px;background:rgba(185,28,28,.07);padding:9px 16px;border-radius:100px;transition:all .2s;text-decoration:none}
+.blog-read:hover{background:var(--red-mid);color:#fff;transform:translateY(-1px)}
 
 /* ===== REFERRAL ===== */
 .referral-section{background:linear-gradient(135deg,var(--red) 0%,var(--red-mid) 60%,var(--red-bright) 100%);padding:80px 0;position:relative;overflow:hidden}
@@ -562,11 +566,7 @@ footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0}
     <span class="pre-pest">🐛</span><span class="pre-pest">🐀</span><span class="pre-pest">🦟</span><span class="pre-pest">🪲</span>
   </div>
   <div class="pre-logo">
-    <div class="pre-logo-icon">PK</div>
-    <div>
-      <div class="pre-name">Pestokil</div>
-      <div class="pre-sub-text">Pest Kenya</div>
-    </div>
+    <img src="15947.jpg" alt="Pestokil Logo" style="height:90px;width:auto;filter:drop-shadow(0 0 30px rgba(185,28,28,0.7)) sepia(0.2) hue-rotate(-8deg) saturate(1.2) brightness(0.85);animation:iconGlow 2s ease-in-out infinite">
   </div>
   <div class="pre-tagline" id="preTag">Kenya's #1 Certified Pest Control</div>
   <div class="pre-bar-wrap"><div class="pre-bar" id="preBar"></div></div>
@@ -651,8 +651,7 @@ footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0}
   <div class="container">
     <div class="nav-inner">
       <a href="#home" class="logo">
-        <div class="logo-icon">PK</div>
-        <div><div class="logo-name">Pestokil</div><div class="logo-sub">Pest Kenya</div></div>
+        <img src="15947.jpg" alt="Pestokil Kenya Logo" class="logo-img">
       </a>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
@@ -1119,9 +1118,65 @@ footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0}
       <a href="#blog" class="btn btn-outline-red">View All Posts →</a>
     </div>
     <div class="blog-grid">
-      <div class="blog-card animate-on-scroll"><div class="blog-img"><img src="https://jacksonlumumba2026-web.github.io/Pesto-kill/11740.jpg" alt="Termite signs" loading="lazy"><div class="blog-cat">Termites</div></div><div class="blog-body"><div class="blog-meta">May 10, 2025</div><h3>5 Warning Signs You Have a Termite Infestation at Home</h3><p>Termites cause billions in property damage annually. Here's how to catch them early before they destroy your home's structure...</p><span class="blog-read">Read More →</span></div></div>
-      <div class="blog-card animate-on-scroll"><div class="blog-img"><img src="https://jacksonlumumba2026-web.github.io/Pesto-kill/11737.jpg" alt="Bedbug prevention" loading="lazy"><div class="blog-cat">Bedbugs</div></div><div class="blog-body"><div class="blog-meta">April 28, 2025</div><h3>How to Prevent Bedbugs When Travelling or Moving to a New House</h3><p>Bedbugs are expert hitchhikers. Learn the simple steps to avoid bringing them home from hotels, guesthouses or second-hand furniture...</p><span class="blog-read">Read More →</span></div></div>
-      <div class="blog-card animate-on-scroll"><div class="blog-img"><img src="https://jacksonlumumba2026-web.github.io/Pesto-kill/11733.jpg" alt="Fumigation guide" loading="lazy"><div class="blog-cat">Fumigation</div></div><div class="blog-body"><div class="blog-meta">April 15, 2025</div><h3>What to Expect During a Professional Fumigation — A Complete Guide</h3><p>First-time fumigation? No stress. Here's exactly what to do before, during and after your Pestokil technician arrives...</p><span class="blog-read">Read More →</span></div></div>
+      <div class="blog-card animate-on-scroll">
+        <div class="blog-img"><img src="https://jacksonlumumba2026-web.github.io/Pesto-kill/11740.jpg" alt="Termite signs" loading="lazy"><div class="blog-cat">Termites</div></div>
+        <div class="blog-body">
+          <div class="blog-meta">May 10, 2025</div>
+          <h3>5 Warning Signs You Have a Termite Infestation at Home</h3>
+          <p>Termites cause billions in property damage annually. Here's how to catch them early before they destroy your home's structure...</p>
+          <a href="https://wa.me/254720961362?text=Hi%20Pestokil!%20I%20read%20your%20blog%20on%20termites%20and%20want%20to%20check%20my%20home." target="_blank" class="blog-read">Read More & Book Inspection →</a>
+        </div>
+      </div>
+
+      <div class="blog-card animate-on-scroll">
+        <div class="blog-img"><img src="https://jacksonlumumba2026-web.github.io/Pesto-kill/11737.jpg" alt="Bedbug prevention" loading="lazy"><div class="blog-cat">Bedbugs</div></div>
+        <div class="blog-body">
+          <div class="blog-meta">April 28, 2025</div>
+          <h3>How to Prevent Bedbugs When Travelling or Moving to a New House</h3>
+          <p>Bedbugs are expert hitchhikers. Learn the simple steps to avoid bringing them home from hotels, guesthouses or second-hand furniture...</p>
+          <a href="https://wa.me/254720961362?text=Hi%20Pestokil!%20I%20read%20your%20blog%20on%20bedbugs%20and%20need%20help." target="_blank" class="blog-read">Read More & Get Help →</a>
+        </div>
+      </div>
+
+      <div class="blog-card animate-on-scroll">
+        <div class="blog-img"><img src="https://jacksonlumumba2026-web.github.io/Pesto-kill/11733.jpg" alt="Fumigation guide" loading="lazy"><div class="blog-cat">Fumigation</div></div>
+        <div class="blog-body">
+          <div class="blog-meta">April 15, 2025</div>
+          <h3>What to Expect During a Professional Fumigation — A Complete Guide</h3>
+          <p>First-time fumigation? No stress. Here's exactly what to do before, during and after your Pestokil technician arrives...</p>
+          <a href="https://wa.me/254720961362?text=Hi%20Pestokil!%20I%20read%20your%20fumigation%20guide%20and%20want%20to%20book." target="_blank" class="blog-read">Read More & Book Now →</a>
+        </div>
+      </div>
+
+      <div class="blog-card animate-on-scroll">
+        <div class="blog-img"><img src="https://jacksonlumumba2026-web.github.io/Pesto-kill/11742.jpg" alt="Rodent control tips" loading="lazy"><div class="blog-cat">Rodents</div></div>
+        <div class="blog-body">
+          <div class="blog-meta">March 30, 2025</div>
+          <h3>How to Know if Rats or Mice Are Living in Your Walls or Ceiling</h3>
+          <p>Scratching sounds at night? Droppings near food? These are classic signs of a rodent problem. Learn how to act fast before damage spreads...</p>
+          <a href="https://wa.me/254720961362?text=Hi%20Pestokil!%20I%20think%20I%20have%20a%20rodent%20problem%20and%20need%20help." target="_blank" class="blog-read">Read More & Get Help →</a>
+        </div>
+      </div>
+
+      <div class="blog-card animate-on-scroll">
+        <div class="blog-img"><img src="https://jacksonlumumba2026-web.github.io/Pesto-kill/11739.jpg" alt="Mosquito control Nairobi" loading="lazy"><div class="blog-cat">Mosquitoes</div></div>
+        <div class="blog-body">
+          <div class="blog-meta">March 12, 2025</div>
+          <h3>Why Mosquito Control in Nairobi is More Important Than You Think</h3>
+          <p>Nairobi's rainy season brings a surge in mosquitoes. Beyond the nuisance, they carry malaria and dengue. Here's how to protect your home...</p>
+          <a href="https://wa.me/254720961362?text=Hi%20Pestokil!%20I%20need%20mosquito%20control%20for%20my%20home." target="_blank" class="blog-read">Read More & Get Quote →</a>
+        </div>
+      </div>
+
+      <div class="blog-card animate-on-scroll">
+        <div class="blog-img"><img src="https://jacksonlumumba2026-web.github.io/Pesto-kill/11735.jpg" alt="Commercial pest control" loading="lazy"><div class="blog-cat">Commercial</div></div>
+        <div class="blog-body">
+          <div class="blog-meta">February 28, 2025</div>
+          <h3>Why Every Restaurant & Hotel in Nairobi Needs a Pest Control Contract</h3>
+          <p>A single pest sighting can destroy your business reputation. Health inspections are strict — here's how a pest control contract keeps you protected...</p>
+          <a href="https://wa.me/254720961362?text=Hi%20Pestokil!%20I%20need%20a%20commercial%20pest%20control%20contract%20for%20my%20business." target="_blank" class="blog-read">Read More & Get Contract →</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1215,7 +1270,7 @@ footer{background:var(--black);color:rgba(255,255,255,.6);padding:80px 0 0}
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="#home" class="logo" style="display:inline-flex"><div class="logo-icon">PK</div><div><div class="logo-name" style="color:#fff">Pestokil</div><div class="logo-sub" style="color:rgba(255,255,255,.35)">Pest Kenya</div></div></a>
+        <a href="#home" class="logo" style="display:inline-flex"><img src="15947.jpg" alt="Pestokil Logo" style="height:56px;width:auto;filter:drop-shadow(0 2px 8px rgba(0,0,0,0.4)) brightness(0.88)"></a>
         <p>Your trusted partner in pest control across Kenya. Safe, effective and affordable solutions for your home and business since 2017. PCO Certified. Fully Insured.</p>
         <div class="foot-soc">
           <a href="https://www.facebook.com/share/1NqegrvrUu/" target="_blank" title="Facebook">f</a>
