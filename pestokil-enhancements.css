@@ -1,7 +1,7 @@
 /* Pestokil production conversion layer */
 :root{--pk-green:#25D366;--pk-red:#117A4E;--pk-ink:#111}
 .skip-link{position:fixed;left:12px;top:12px;z-index:10000;background:#111;color:#fff;padding:10px 16px;border-radius:8px;transform:translateY(-150%);transition:transform .2s}.skip-link:focus{transform:translateY(0)}
-.hero-bg{background-image:url('11731.jpg')!important;background-position:center 35%!important}
+.hero-bg{background-image:url('nairobi-hero-banner.jpg')!important;background-position:center 35%!important}
 .hero-overlay{background:linear-gradient(90deg,rgba(95,0,0,.96) 0%,rgba(170,0,0,.78) 52%,rgba(20,0,0,.68) 100%)!important}
 .lead-card,.hero-panel,.quote-card{scroll-margin-top:100px}
 .btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #FFD65A;outline-offset:3px}
