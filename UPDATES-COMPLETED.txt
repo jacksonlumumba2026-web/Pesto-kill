@@ -1,0 +1,31 @@
+PESTOKIL WEBSITE — SEO, TRUST & PERFORMANCE UPDATE
+
+Completed website-side improvements:
+
+PHASE 1
+- Removed/rewrote unsupported result-style before/after claims on the homepage.
+- Added a transparent review policy: only genuine, traceable customer feedback should be published.
+- Reworked credentials wording so no licence/certificate is labelled verified without supporting documentation.
+- Expanded major Nairobi, residential, commercial, bedbug, cockroach, rodent, termite, fumigation, pricing and case-study content.
+- Reworked case-study page around a genuine documentation standard rather than invented outcomes.
+- Standardised pricing and treatment wording and removed unsupported eco-safe/blanket-warranty claims.
+
+PHASE 2
+- Added unique local-property context to Nairobi location pages.
+- Consolidated Google Analytics/Ads base tracking to GA4 G-YYHJCLZXB2 and Google Ads AW-18164749984; removed the extra base IDs and duplicate secondary conversion calls.
+- Added Open Graph title, description, URL, image and site name metadata across all HTML pages.
+- Added Twitter summary-card metadata.
+- Fixed PWA manifest icons to use icon-192.png and icon-512.png with correct PNG MIME types.
+- Added performance/accessibility CSS, lazy-loading/async image handling and reduced-motion support.
+- Compressed JPEG assets without changing their dimensions.
+
+PHASE 3 WEBSITE AUTHORITY PREPARATION
+- Added five useful Nairobi pest-control articles.
+- Added the new article URLs to sitemap.xml.
+- Added SEO-AUTHORITY-SETUP.md with the exact external steps for Google Business Profile, Search Console, genuine reviews, credentials, case studies, local citations/backlinks and measurement.
+
+IMPORTANT VERIFICATION ITEMS
+- Real Google reviews cannot be invented. Publish them only after the actual Google Business Profile/review source is supplied.
+- Real licences/certificates cannot be invented. Add scans/details only after validity is confirmed.
+- Real case studies and job photos cannot be invented. Publish actual Pestokil jobs with permission and service records.
+- Google Business Profile, Search Console, external citations and backlink outreach require access to the relevant accounts/websites; this package prepares the website and provides the deployment checklist but does not claim those external actions were completed.

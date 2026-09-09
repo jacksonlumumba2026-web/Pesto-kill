@@ -1,18 +1,36 @@
 {
   "name": "Pestokil Pest Kenya",
   "short_name": "Pestokil",
-  "description": "Kenya's #1 Professional Pest Control & Fumigation",
+  "description": "Professional pest control and fumigation services across Nairobi and Kenya.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0A0A0A",
-  "theme_color": "#B91C1C",
+  "theme_color": "#117A4E",
   "orientation": "portrait-primary",
   "icons": [
-    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ],
   "shortcuts": [
-    { "name": "WhatsApp Quote", "url": "https://wa.me/254720961362?text=Hi%20Pestokil!", "description": "Get a free quote on WhatsApp" },
-    { "name": "Call Now", "url": "tel:+254720961362", "description": "Call Pestokil directly" }
+    {
+      "name": "WhatsApp Quote",
+      "url": "https://wa.me/254720961362?text=Hi%20Pestokil!",
+      "description": "Get a free quote on WhatsApp"
+    },
+    {
+      "name": "Call Now",
+      "url": "tel:+254720961362",
+      "description": "Call Pestokil directly"
+    }
   ]
 }
